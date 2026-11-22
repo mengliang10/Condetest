@@ -29,7 +29,7 @@
   async function ensureLocaleFont(code) {
     const fonts = fontFamilies[code];
     if (!fonts || loadedFonts.has(code)) return;
-    const query = fonts.map(family => 'family=' + encodeURIComponent(family).replace(/%20/g,'+') + ':wght@400;500;600').join('&');
+    const query = fonts.map(family => 'family=' + encodeURIComponent(family).replace(/%20/g,'+') + ':wght@' + (family === 'Gowun Batang' ? '400;700' : '400;500;600')).join('&');
     const link = document.createElement('link');
     link.rel = 'stylesheet';
     link.href = 'https://fonts.googleapis.com/css2?' + query + '&display=swap';
