@@ -158,3 +158,15 @@ html[data-locale]:not([data-locale="en"]) .nav{letter-spacing:.06em}
 @media(max-width:850px){
   .header-actions > a.download-pdf{display:inline-flex}
 }
+
+/* Slightly larger, more readable CJK running copy without changing headline scale. */
+html[data-locale]:not([data-locale="en"]) .body-columns,
+html[data-locale]:not([data-locale="en"]) .story-break p{font-size:18px;line-height:1.95}
+html[data-locale]:not([data-locale="en"]) .story-intro p{font-size:clamp(23px,2.5vw,33px)}
+html[data-locale]:not([data-locale="en"]) .editorial-band p,
+html[data-locale]:not([data-locale="en"]) .tile p{font-size:15px;line-height:1.85}
+html[data-locale]:not([data-locale="en"]) .deck{font-size:clamp(21px,2.25vw,28px)}
+@media(max-width:550px){
+  html[data-locale]:not([data-locale="en"]) .body-columns,
+  html[data-locale]:not([data-locale="en"]) .story-break p{font-size:17.5px;line-height:1.95}
+}
