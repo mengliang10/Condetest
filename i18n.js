@@ -19,21 +19,26 @@
   const imageAltEnglish = ['Dramatic mountain peaks in soft morning light','Traditional Japanese architecture and garden','Italian coastal village with colourful buildings','Mountain landscape','Sun-washed Italian coastal village','Quiet Japanese garden and traditional architecture'];
   let requestSequence = 0;
   const baseLinks = new WeakMap();
-  const fontFamilies = { 'zh-CN':'Noto Serif SC', 'zh-TW':'Noto Serif TC', ko:'Noto Serif KR', ja:'Noto Serif JP' };
+  const fontFamilies = {
+    'zh-CN': ['Noto Sans SC', 'Noto Serif SC'],
+    'zh-TW': ['Noto Sans TC', 'Noto Serif TC'],
+    ko: ['Noto Sans KR', 'Gowun Batang'],
+    ja: ['Noto Sans JP', 'Zen Old Mincho']
+  };
   const loadedFonts = new Set();
   async function ensureLocaleFont(code) {
-    const family = fontFamilies[code];
-    if (!family || loadedFonts.has(code)) return;
-    const url = 'https://fonts.googleapis.com/css2?family=' + encodeURIComponent(family).replace(/%20/g,'+') + ':wght@400;500;600&display=swap';
+    const fonts = fontFamilies[code];
+    if (!fonts || loadedFonts.has(code)) return;
+    const query = fonts.map(family => 'family=' + encodeURIComponent(family).replace(/%20/g,'+') + ':wght@400;500;600').join('&');
     const link = document.createElement('link');
     link.rel = 'stylesheet';
-    link.href = url;
+    link.href = 'https://fonts.googleapis.com/css2?' + query + '&display=swap';
     await new Promise((resolve,reject) => {
       link.onload = resolve;
       link.onerror = () => reject(new Error('Language font unavailable'));
       document.head.appendChild(link);
     });
-    await document.fonts.load('400 18px "' + family + '"');
+    await Promise.all(fonts.map(f => document.fonts.load('400 18px "' + f + '"')));
     loadedFonts.add(code);
   }
   const original = new WeakMap();
@@ -50,23 +55,58 @@
     original.set(node, node.nodeValue);
     textNodes.push(node);
   }
-  const switcher = document.createElement('label');
+  const switcher = document.createElement('details');
   switcher.className = 'language-selector no-print';
-  switcher.setAttribute('aria-label', 'Website language');
-  const caption = document.createElement('span');
-  caption.textContent = 'Language';
-  const select = document.createElement('select');
-  select.setAttribute('aria-label', 'Select website language');
-  select.id = 'website-language';
+  const trigger = document.createElement('summary');
+  trigger.className = 'language-trigger';
+  trigger.setAttribute('aria-label', 'Choose language');
+  const globe = document.createElement('span');
+  globe.className = 'language-globe';
+  globe.setAttribute('aria-hidden', 'true');
+  globe.textContent = '◎';
+  const selectedLabel = document.createElement('span');
+  selectedLabel.className = 'language-current';
+  selectedLabel.textContent = languages[current];
+  const chevron = document.createElement('span');
+  chevron.className = 'language-chevron';
+  chevron.textContent = '⌄';
+  chevron.setAttribute('aria-hidden','true');
+  trigger.append(globe,selectedLabel,chevron);
+  const menu = document.createElement('div');
+  menu.className = 'language-options';
+  menu.setAttribute('aria-label','Website language');
+  const buttons = new Map();
   Object.entries(languages).forEach(([code,name]) => {
-    const option = document.createElement('option');
-    option.value = code;
-    option.textContent = name;
-    select.appendChild(option);
+    const button = document.createElement('button');
+    button.type = 'button';
+    button.className = 'language-choice';
+    button.dataset.code = code;
+    button.lang = code;
+    button.textContent = name;
+    button.addEventListener('click',() => {
+      switcher.open = false;
+      void change(code);
+      trigger.focus();
+    });
+    menu.appendChild(button);
+    buttons.set(code, button);
   });
-  select.value = current;
-  switcher.append(caption, select);
+  switcher.append(trigger, menu);
   document.querySelector('.header-actions')?.prepend(switcher);
+  document.addEventListener('click',event=>{
+    if(switcher.open && !switcher.contains(event.target)) switcher.open = false;
+  });
+  switcher.addEventListener('keydown',event=>{
+    if(event.key === 'Escape') { switcher.open = false; trigger.focus(); return; }
+    if(!switcher.open || !['ArrowUp','ArrowDown'].includes(event.key)) return;
+    event.preventDefault();
+    const focusables = [...buttons.values()];
+    const idx = focusables.indexOf(document.activeElement);
+    focusables[(idx+(event.key==='ArrowDown'?1:-1)+focusables.length)%focusables.length].focus();
+  });
+  switcher.addEventListener('toggle',()=> {
+    trigger.setAttribute('aria-expanded',String(switcher.open));
+  });
   const loading = new Map();
   function getDictionary(code) {
     if (code === 'en') return Promise.resolve({});
@@ -96,15 +136,16 @@
     document.title = code === 'en' ? titleEnglish : (isStory
       ? (dictionary['The Art of'] || 'The Art of') + (dictionary['Slow Travel'] || ' Slow Travel')
       : (dictionary['Go'] || 'Go') + ' ' + (dictionary['slow.'] || 'slow.') + ' ' + (dictionary['Go deep.'] || 'Go deep.')) + ' | Intriq Journal';
-    caption.textContent = captions[code];
-    switcher.setAttribute('aria-label', captions[code]);
+    selectedLabel.textContent = languages[code];
+    trigger.setAttribute('aria-label', captions[code] + ': ' + languages[code]);
+    buttons.forEach((button,id)=>{button.setAttribute('aria-current',id === code ? 'true' : 'false');});
     const altList = imageAltTranslations[code];
     document.querySelectorAll('img[alt]').forEach(img => {
       if (!img.dataset.originalAlt) img.dataset.originalAlt = img.getAttribute('alt') || '';
       const idx = imageAltEnglish.indexOf(img.dataset.originalAlt);
       if (idx >= 0) img.setAttribute('alt', altList?.[idx] || img.dataset.originalAlt);
     });
-    select.value = code;
+
     document.querySelectorAll('a.download-pdf').forEach(link => {
       const name = code === 'en' ? 'magazine.pdf' : 'magazine.'+code+'.pdf';
       link.href = name;
@@ -121,7 +162,7 @@
   async function change(code) {
     if (!safe.has(code)) code = 'en';
     const seq = ++requestSequence;
-    select.disabled = true;
+    trigger.setAttribute('aria-busy','true');
     window.__localeReady = false;
     try {
       const translations = await getDictionary(code);
@@ -131,11 +172,9 @@
     } catch (error) {
       console.error('Translation load failed',error);
       if (seq === requestSequence) apply('en',{});
-    } finally { if(seq === requestSequence) select.disabled = false; }
+    } finally { if(seq === requestSequence) trigger.removeAttribute('aria-busy'); }
   }
-  select.addEventListener('change', () => {
-    void change(select.value);
-  });
+
   window.__localeReady = false;
   window.__setLocale = change;
   void change(current);
