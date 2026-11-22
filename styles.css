@@ -53,3 +53,13 @@ html,body{background:white!important;margin:0!important;padding:0!important;prin
   html.print-font-ready .print-sheet{--serif:'Cormorant Garamond',Georgia,serif}
   .print-progress,.no-print{display:none!important}
 }
+
+/* Distinct print and direct-download actions; compact on phone screens. */
+.download-pdf{display:inline-flex;align-items:center;justify-content:center;background:var(--red)!important;color:#fff!important;border-color:var(--red)!important;text-align:center;text-decoration:none}
+.download-pdf:hover{background:var(--ink)!important;border-color:var(--ink)!important;color:#fff!important}
+@media(max-width:660px){
+  .site-header{height:auto;min-height:80px;grid-template-columns:1fr;gap:10px;padding:14px 20px}
+  .site-header .brand{justify-self:center}
+  .header-actions{justify-content:center;flex-wrap:wrap;gap:9px}
+  .header-actions .pill{font-size:9px!important;padding:12px 13px!important}
+}
