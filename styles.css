@@ -45,3 +45,11 @@ html,body{background:white!important;margin:0!important;padding:0!important;prin
 .print-cover .print-cover-topic i{font-weight:400}
 .print-cover .print-cover-tag{position:absolute;top:49mm;left:14mm;right:14mm;text-align:center;color:white;font:700 8pt var(--sans);letter-spacing:.3em;text-transform:uppercase}
 }
+/* Small, accessible status indicator shown only while requesting print assets. */
+.print-progress:not([hidden]){position:fixed;z-index:9999;bottom:22px;left:50%;transform:translateX(-50%);max-width:calc(100vw - 32px);background:#182027;color:#fffdf9;padding:15px 22px;font:600 12px/1.5 var(--sans);letter-spacing:.04em;box-shadow:0 8px 32px #0003;text-align:center}
+[data-print-button][disabled]{opacity:.55;cursor:progress}
+@media print{
+  /* The extra editorial font is fetched only after Print / PDF is clicked. */
+  html.print-font-ready .print-sheet{--serif:'Cormorant Garamond',Georgia,serif}
+  .print-progress,.no-print{display:none!important}
+}
