@@ -150,3 +150,11 @@ html[data-locale]:not([data-locale="en"]) .nav{letter-spacing:.06em}
   html[data-locale]:not([data-locale="en"]) .print-page1 .print-sub{font-family:var(--sans);font-style:normal}
   html[data-locale]:not([data-locale="en"]) .print-page2 .print-quote{font-family:var(--serif);font-style:normal}
 }
+
+/* Preserve direct PDF access on mobile and keep header composition uncluttered. */
+@media(max-width:1250px){
+  .header-actions > a:not(.download-pdf){display:none}
+}
+@media(max-width:850px){
+  .header-actions > a.download-pdf{display:inline-flex}
+}
