@@ -32,12 +32,21 @@ jobs:
           npx playwright install --with-deps chromium
       - name: Build downloadable magazine
         run: npm run build:pdf
+      - name: Stage site files
+        # Publish only what the site needs. Without this step the whole repository,
+        # including node_modules from the PDF renderer, would be uploaded to Pages.
+        run: |
+          mkdir -p _site
+          cp index.html story.html styles.css i18n.js print.js ui.js _site/
+          cp -r lang _site/
+          cp magazine*.pdf _site/
+          ls -la _site
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
       - name: Deploy website
         id: deployment
         uses: actions/deploy-pages@v4

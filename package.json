@@ -1,1 +1,14 @@
-{"private":true,"type":"module","scripts":{"build:pdf":"node render-pdf.mjs"},"devDependencies":{"playwright":"1.58.2"}}
+{
+  "name": "intriq-journal",
+  "version": "1.0.0",
+  "description": "Intriq Journal: a slow-travel editorial concept for web and print, in five languages.",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "build:pdf": "node render-pdf.mjs"
+  },
+  "devDependencies": {
+    "playwright": "1.58.2"
+  }
+}

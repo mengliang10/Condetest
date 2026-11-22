@@ -9,6 +9,7 @@
   try { saved = localStorage.getItem('intriq-language') || 'en'; } catch {}
   let current = safe.has(requested) ? requested : (safe.has(saved) ? saved : 'en');
   const titleEnglish = document.title;
+  const skipLabels = { en:'Skip to content', 'zh-CN':'跳到主要内容', 'zh-TW':'跳到主要內容', ko:'본문 바로가기', ja:'メインコンテンツへスキップ' };
   const captions = { en:'Language', 'zh-CN':'语言', 'zh-TW':'語言', ko:'언어', ja:'言語' };
   const imageAltTranslations = {
     'zh-CN':['晨光中的壮丽群山','传统日式建筑与庭园','色彩鲜明的意大利海滨村庄','山地风光','阳光照耀下的意大利海滨村庄','静谧的日式庭园与传统建筑'],
@@ -75,6 +76,7 @@
   const menu = document.createElement('div');
   menu.className = 'language-options';
   menu.setAttribute('aria-label','Website language');
+  menu.setAttribute('role','group');
   const buttons = new Map();
   Object.entries(languages).forEach(([code,name]) => {
     const button = document.createElement('button');
@@ -92,7 +94,7 @@
     buttons.set(code, button);
   });
   switcher.append(trigger, menu);
-  document.querySelector('.header-actions')?.prepend(switcher);
+  (document.querySelector('.nav') || document.querySelector('.header-actions'))?.append(switcher);
   document.addEventListener('click',event=>{
     if(switcher.open && !switcher.contains(event.target)) switcher.open = false;
   });
@@ -133,9 +135,13 @@
     });
     document.documentElement.lang = code;
     document.documentElement.dataset.locale = code;
+    // Chinese and Japanese titles read naturally without spaces; Korean needs them.
+    const gap = (code === 'zh-CN' || code === 'zh-TW' || code === 'ja') ? '' : ' ';
     document.title = code === 'en' ? titleEnglish : (isStory
-      ? (dictionary['The Art of'] || 'The Art of') + (dictionary['Slow Travel'] || ' Slow Travel')
-      : (dictionary['Go'] || 'Go') + ' ' + (dictionary['slow.'] || 'slow.') + ' ' + (dictionary['Go deep.'] || 'Go deep.')) + ' | Intriq Journal';
+      ? (dictionary['The Art of'] || 'The Art of') + (dictionary['Slow Travel'] ? gap + dictionary['Slow Travel'] : ' Slow Travel')
+      : [dictionary['Go'] || 'Go', dictionary['slow.'] || 'slow.', dictionary['Go deep.'] || 'Go deep.'].join(gap)) + ' | Intriq Journal';
+    const skip = document.querySelector('.skip-link');
+    if (skip) skip.textContent = skipLabels[code] || skipLabels.en;
     selectedLabel.textContent = languages[code];
     trigger.setAttribute('aria-label', captions[code] + ': ' + languages[code]);
     buttons.forEach((button,id)=>{button.setAttribute('aria-current',id === code ? 'true' : 'false');});
