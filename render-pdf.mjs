@@ -56,7 +56,7 @@ try {
       });
       // Chromium emits one /Type /Page dictionary per physical sheet.
       // Fail the build if a typography change introduces a third page.
-      const pageCount = (renderedPdf.toString('latin1').match(/\\/Type\\s*\\/Page\\b/g) || []).length;
+      const pageCount = (renderedPdf.toString('latin1').match(/\/Type\s*\/Page\b/g) || []).length;
       if (pageCount !== 2) throw new Error('PDF page count mismatch for ' + locale + ': expected 2, got ' + pageCount);
       console.log('Created ' + filename + ' (2 A4 pages, ' + statSync(filename).size + ' bytes)');
     } finally {
