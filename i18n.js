@@ -157,7 +157,7 @@
       link.href = name;
       link.setAttribute('download','Intriq-Journal-Slow-Travel-'+code+'.pdf');
     });
-    document.querySelectorAll('a[href="story.html"], a[href="index.html"]').forEach(link => {
+    document.querySelectorAll('a[href="story.html"], a[href="index.html"], a[href="bouvier.html"]').forEach(link => {
       if (!baseLinks.has(link)) baseLinks.set(link, link.getAttribute('href').split('?')[0]);
       link.href = baseLinks.get(link) + (code === 'en' ? '' : '?lang=' + encodeURIComponent(code));
     });
