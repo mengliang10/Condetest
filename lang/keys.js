@@ -88,5 +88,11 @@ window.INTRIQ_ENGLISH_KEYS = [
   "The slow traveller might choose a train over a plane because the landscape unfolds continuously, rather than appearing as isolated chapters between airports.",
   "In Tuscany, a week in one village reveals subtleties a hurried tour never could. You learn when the piazza catches the best light, return to the same baker and notice the village change from morning to evening.",
   "Such intimacy cannot be reduced to a checklist. It comes from paying attention, and from the willingness to remain.",
-  "The ultimate travel luxury may not be the freedom to go anywhere. It may be the freedom to stay long enough for somewhere to matter."
+  "The ultimate travel luxury may not be the freedom to go anywhere. It may be the freedom to stay long enough for somewhere to matter.",
+  "01 / Stay",
+  "Spend several nights in one neighbourhood. Return to the same market, café and street. Familiarity makes room for encounters that a checklist cannot deliver.",
+  "02 / Wander",
+  "Keep at least one afternoon free of reservations. Follow a local recommendation, change direction, and treat the unexpected as part of the itinerary.",
+  "03 / Arrive",
+  "Where practical, choose a rail journey or overland crossing. The changing landscape connects places into a story and makes arrival feel earned."
 ];
