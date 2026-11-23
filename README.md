@@ -4,6 +4,12 @@ A slow-travel editorial concept, designed for the screen and composed for the pa
 (an issue cover and a long-read feature), five languages, and a print layout that produces a
 two-page A4 magazine PDF.
 
+## View the published website
+
+**Public URL:** https://mengliang10.github.io/Condetest/
+
+This is the GitHub Pages project URL. The site is accessible when GitHub Pages deployment is enabled and the workflow succeeds.
+
 ## Pages
 
 | File | What it is |
