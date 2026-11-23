@@ -224,3 +224,12 @@
  html[data-locale]:not([data-locale="en"]) .bouvier-sheet-two .bp2-photo{height:28mm}
  html[data-locale]:not([data-locale="en"]) .bouvier-sheet-two .bp2-steps p{font-family:var(--sans);font-size:7.2pt}
 }
+
+
+@media print{
+ .bouvier-sheet-two .bp2-steps{top:249mm}
+ .bouvier-sheet-two .bp2-steps .bp2-thumb{display:block;width:100%;height:13mm;object-fit:cover;filter:saturate(.82);margin:0 0 2mm}
+ .bouvier-sheet-two .bp2-steps h3{font-size:7.3pt;margin-bottom:1.4mm}
+ .bouvier-sheet-two .bp2-steps p{font-size:7pt;line-height:1.28}
+ html[data-locale]:not([data-locale="en"]) .bouvier-sheet-two .bp2-steps p{font-size:6.6pt;line-height:1.27}
+}
