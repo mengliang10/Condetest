@@ -1,152 +1,249 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#17312f">
-  <meta name="robots" content="noindex, follow">
-  <meta name="description" content="From Kashgar and the Pamirs to the Taklamakan and Kuqa: a deeply considered 10-day private journey through Southern Xinjiang. Independent editorial redesign concept.">
-  <meta property="og:type" content="article">
-  <meta property="og:title" content="Between Worlds | Southern Xinjiang · Intriq Journal Concept">
-  <meta property="og:description" content="A private journey from the Pamirs to the Silk Road's layered histories, told through people, place and perspective.">
-  <meta property="og:image" content="https://mengliang10.github.io/Condetest/assets/xinjiang/karakul.jpg">
-  <title>Between Worlds | Southern Xinjiang · Intriq Journal Concept</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
-  <style>
-    :root{--ink:#20312e;--dark:#17312f;--deep:#102825;--cream:#f6f3eb;--paper:#fffcf7;--muted:#65736c;--subtle:#ede8dc;--line:#dcd6c7;--accent:#aa7e52;--warm:#d1b38e;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
-    *,*::before,*::after{box-sizing:border-box}
-    html{scroll-behavior:smooth;scroll-padding-top:84px}
-    body{margin:0;background:var(--cream);color:var(--ink);font:400 16px/1.78 var(--sans);-webkit-font-smoothing:antialiased}
-    img{max-width:100%;display:block}a{color:inherit}button,input,select,textarea{font:inherit}button{cursor:pointer}a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible,summary:focus-visible{outline:3px solid #a77836;outline-offset:4px}
-    .skip{position:absolute;top:-70px;left:15px;background:white;color:black;padding:12px;z-index:100}.skip:focus{top:15px}
-    .nav{height:78px;background:var(--paper);display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 max(24px,calc((100vw - 1280px)/2));border-bottom:1px solid var(--line)}
-    .brand{text-decoration:none;font:500 26px/1 var(--serif);letter-spacing:-.04em;white-space:nowrap}.brand small{display:block;font:700 9px/1.4 var(--sans);letter-spacing:.25em;text-transform:uppercase;margin-top:7px}
-    .navlinks{display:flex;align-items:center;gap:30px;font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}.navlinks a{text-decoration:none}.navlinks a:hover{text-decoration:underline;text-underline-offset:5px}.navcta{border:1px solid var(--dark);padding:11px 16px}
-    .concept{background:#eadfce;color:#4b3d31;padding:8px 24px;text-align:center;font:600 11px/1.5 var(--sans);letter-spacing:.05em}
-    .hero{min-height:690px;display:grid;grid-template-columns:53% 47%;background:var(--dark);color:var(--paper)}
-    .hero-copy{padding:clamp(58px,6vw,115px) clamp(28px,6.3vw,112px) 54px max(30px,calc((100vw - 1220px)/2));display:flex;flex-direction:column;justify-content:center}
-    .kicker{font:700 11px/1.5 var(--sans);letter-spacing:.23em;text-transform:uppercase;color:var(--accent)}.hero .kicker{color:var(--warm)}
-    h1,h2,h3,p,blockquote{margin-top:0}h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.03em}h1{font-size:clamp(57px,7vw,110px);line-height:1.04;margin:25px 0 28px}h1 em{color:var(--warm);font-weight:400}
-    .herolede{font-size:clamp(16px,1.28vw,19px);line-height:1.8;max-width:595px;color:#e0e8e1}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0 36px}
-    .button{display:inline-flex;align-items:center;justify-content:center;min-height:47px;padding:10px 20px;text-decoration:none;text-align:center;border:1px solid currentColor;background:transparent;color:inherit;font:700 11px/1.5 var(--sans);letter-spacing:.1em;text-transform:uppercase;transition:background .2s,color .2s}
-    .button.primary{background:#eadbc5;border-color:#eadbc5;color:var(--dark)}.button:hover{background:white;color:var(--dark)}.button.primary:hover{background:#fff}.button.dark{background:var(--dark);border-color:var(--dark);color:white}.button.dark:hover{background:#30504a}
-    .hero-facts{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:auto;padding-top:26px;border-top:1px solid #78928b80}.hero-facts strong{display:block;font:400 23px/1.3 var(--serif);margin-bottom:5px}.hero-facts span{display:block;font-size:10px;letter-spacing:.08em;color:#b7c7be;text-transform:uppercase}
-    .hero-visual{position:relative;min-height:690px;overflow:hidden}.hero-visual>img{width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(.78) contrast(1.06)}.hero-visual:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,#081d1bb8,transparent 55%)}
-    .hero-caption{position:absolute;z-index:1;bottom:36px;left:34px;right:36px;display:flex;justify-content:space-between;gap:20px;color:white;font-size:10px;letter-spacing:.09em;text-transform:uppercase}.hero-caption strong{font-weight:600}
-    .container{max-width:1240px;padding:0 30px;margin:auto}.section{padding:clamp(72px,8vw,120px) 0}.section-header{max-width:760px;margin-bottom:44px}.section-header h2,.feature-text h2,.planning h2{font-size:clamp(36px,4.7vw,67px);line-height:1.17;margin:14px 0 20px}.section-header p{font-size:17px;color:#4e5e57}
-    .opening{display:grid;grid-template-columns:.75fr 1.25fr;gap:clamp(40px,8vw,145px)}.opening h2{font-size:clamp(38px,4.8vw,68px);line-height:1.15}.opening .prose{font-size:18px;line-height:1.95}.opening .prose p:last-child{margin-bottom:0}.accent-rule{width:50px;height:2px;background:var(--accent);margin-bottom:28px}
-    .statement{background:#eae4d8;padding:65px 30px;text-align:center}.statement blockquote{max-width:1010px;margin:15px auto;font:400 clamp(26px,3.5vw,49px)/1.45 var(--serif)}.statement cite{display:block;font:700 10px var(--sans);letter-spacing:.15em;font-style:normal;text-transform:uppercase;color:var(--muted)}
-    .acts{padding-bottom:105px}.act{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(35px,7vw,95px);margin-top:75px}.act.reverse .act-media{order:2}.act.reverse .act-copy{order:1}.act-media{position:relative}.act-media img{width:100%;height:420px;object-fit:cover}.act-media figcaption{position:absolute;bottom:13px;left:16px;right:16px;background:#0e2926d9;color:#fff;padding:9px 12px;font-size:11px;line-height:1.4;letter-spacing:.04em;max-width:max-content}.act-copy .overline{color:var(--accent);letter-spacing:.17em;text-transform:uppercase;font-size:11px;font-weight:700}.act-copy h3{font-size:clamp(37px,4.1vw,59px);line-height:1.14;margin:16px 0 19px}.act-copy p{font-size:16px;line-height:1.88}.act-copy .details{padding-top:15px;border-top:1px solid var(--line);font-size:12px;color:var(--muted);line-height:1.7}
-    .photoessay{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:64px}.photoessay figure{margin:0;background:var(--paper)}.photoessay img{width:100%;height:215px;object-fit:cover}.photoessay figcaption{font-size:11px;line-height:1.5;color:var(--muted);padding:12px 4px}
-    .microgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-top:72px}.micro{border-top:1px solid var(--accent);padding:23px 22px;background:var(--paper)}.micro b{color:var(--accent);font-size:11px;letter-spacing:.18em}.micro h4{font:400 26px/1.25 var(--serif);margin:10px 0}.micro p{font-size:13px;color:var(--muted);margin:0}
-    .dark-panel{background:var(--dark);color:#f9f6ef}.dark-panel .kicker{color:#c2a280}.differentiation{display:grid;grid-template-columns:.8fr 1.2fr;gap:10%;padding-top:100px;padding-bottom:100px}.differentiation h2{font-size:clamp(35px,4vw,57px);line-height:1.2}.truths{display:grid;gap:27px}.truth{padding:0 0 25px;border-bottom:1px solid #8ba09750}.truth h3{font-size:26px;margin-bottom:10px}.truth p{color:#cfdbd1;font-size:14px;margin:0}.truth .num{color:#c7a880;font-size:10px;letter-spacing:.1em;margin-right:12px}
-    .routeblock{display:grid;grid-template-columns:1fr 1.1fr;gap:60px;align-items:center}.map{background:#f0e9df;padding:20px}.map img{max-width:100%;height:auto;max-height:570px;margin:auto}.map figcaption{font-size:11px;color:var(--muted);text-align:center;margin-top:9px}.routepoints{display:flex;gap:7px 13px;flex-wrap:wrap;margin-top:25px}.routepoints span{border:1px solid var(--line);padding:7px 9px;font-size:12px;background:var(--paper)}.routeblock h2{font-size:clamp(36px,4.6vw,60px);line-height:1.18}
-    .schedule{background:var(--paper)}.schedule-header{display:flex;align-items:end;justify-content:space-between;gap:30px}.schedule-header h2{font-size:clamp(42px,5vw,68px);margin:8px 0 0}.schedule-intro{max-width:480px;color:var(--muted);font-size:14px}.daylist{margin-top:50px;border-top:1px solid var(--line)}
-    details.day{border-bottom:1px solid var(--line)}.day summary{display:grid;grid-template-columns:70px 1fr 140px 30px;gap:25px;align-items:center;list-style:none;padding:24px 10px;cursor:pointer}.day summary::-webkit-details-marker{display:none}.daynum{font:400 35px var(--serif);color:#9d8d75}.dayroute{font-size:10px;letter-spacing:.13em;color:var(--accent);text-transform:uppercase;font-weight:700}.daytitle{font:400 clamp(20px,2.2vw,30px)/1.25 var(--serif)}.dayplace{text-align:right;color:var(--muted);font-size:12px}.plus{font-size:26px;font-weight:300;text-align:right;line-height:1}.day[open] .plus{transform:rotate(45deg)}.day[open] summary{color:var(--dark)}.daybody{padding:0 58px 32px 105px;max-width:975px;color:#41524b}.daybody p{margin-bottom:10px}.daybody .overnight{margin:20px 0 0;font-size:11px;color:var(--muted);letter-spacing:.09em;text-transform:uppercase}.daybody .caveat{color:#795d3d;font-size:12px;font-weight:600}
-    .journey-note{display:flex;gap:19px;align-items:start;background:var(--subtle);padding:22px 26px;margin-top:30px;color:#4e5e57;font-size:13px}.journey-note strong{flex:0 0 auto;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--dark)}
-    .planning{display:grid;grid-template-columns:1fr 1fr;gap:clamp(50px,9vw,120px)}.planning h2{margin-bottom:25px}.planning p{font-size:15px}.planning .price{font:400 58px/1.08 var(--serif);margin:10px 0 6px}.planning .price span{font:400 16px var(--sans)}.fineprint{color:var(--muted);font-size:12px!important}.planning ul{padding-left:22px;margin:20px 0}.planning li{margin-bottom:12px;font-size:14px}.planning h3{font-size:29px;margin-bottom:15px}
-    .qualify{background:#eae5d9;padding:95px 0}.qualify-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(35px,7vw,100px)}.qualify h2{font-size:clamp(38px,4.9vw,66px);line-height:1.15;margin:14px 0 20px}.qualify p{color:#506158}.formbox{background:var(--paper);padding:clamp(22px,3.5vw,45px);box-shadow:0 12px 45px #253c3310}.formbox label,.formbox legend{display:block;font-weight:700;font-size:11px;letter-spacing:.11em;text-transform:uppercase;margin:0 0 10px}.formbox select,.formbox textarea{width:100%;background:transparent;border:1px solid #bdb7aa;padding:13px 14px;color:var(--ink);border-radius:0}.formbox textarea{min-height:95px;resize:vertical}.field{margin-bottom:22px}.options{display:grid;grid-template-columns:1fr 1fr;gap:10px}.options label{display:flex;align-items:center;gap:9px;font-size:12px;letter-spacing:0;text-transform:none;font-weight:500;border:1px solid var(--line);padding:10px 12px;margin:0;cursor:pointer}.options input{accent-color:var(--dark)}.formbox fieldset{margin:0 0 20px;padding:0;border:0}.formbox button{width:100%;min-height:52px}.privacy{font-size:11px!important;margin:10px 0 0;color:var(--muted)!important}.footer{background:var(--deep);color:#c0cfc7;padding:42px 30px;font-size:12px}.foot-inner{max-width:1180px;margin:auto;display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap}.footer a{text-underline-offset:3px}.footer strong{color:#fff}
-    @media(max-width:1000px){.hero{min-height:auto;grid-template-columns:1fr 42%}.hero-copy{padding:70px 35px}.hero-visual{min-height:620px}.opening,.differentiation{gap:50px}.routeblock{gap:30px}.day summary{grid-template-columns:50px 1fr 100px 25px;gap:12px}.daybody{padding-left:66px}}
-    @media(max-width:730px){html{scroll-padding-top:20px}.nav{height:70px;padding:0 20px}.navlinks{gap:10px;font-size:10px}.navlinks .disappear{display:none}.navcta{padding:8px 9px}.concept{font-size:10px}.hero{display:flex;flex-direction:column}.hero-copy{padding:65px 24px 40px}.hero-visual{height:320px;min-height:320px}.hero-facts{gap:10px}.hero-facts strong{font-size:17px}.hero-facts span{font-size:9px}.hero-caption{bottom:15px;left:15px;right:15px}.container{padding:0 22px}.section{padding:65px 0}.opening,.act,.differentiation,.routeblock,.planning,.qualify-grid{grid-template-columns:1fr;gap:30px}.opening h2{margin:15px 0}.opening .prose{font-size:16px}.act{margin-top:55px}.act.reverse .act-media,.act.reverse .act-copy{order:initial}.act-media img{height:310px}.photoessay{grid-template-columns:1fr;gap:14px}.photoessay img{height:240px}.microgrid{grid-template-columns:1fr;gap:10px;margin-top:50px}.dark-panel .differentiation{padding-top:65px;padding-bottom:65px}.schedule-header{display:block}.schedule-intro{margin-top:10px}.day summary{grid-template-columns:42px 1fr 18px;gap:12px;padding:18px 3px}.dayplace{display:none}.daynum{font-size:27px}.dayroute{font-size:9px}.daytitle{font-size:20px}.daybody{padding:0 10px 25px 57px}.journey-note{display:block}.journey-note strong{display:block;margin-bottom:7px}.qualify{padding:65px 0}.options{grid-template-columns:1fr}.footer{padding:34px 22px}.hero-facts{padding-top:20px}}
-    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#17312f">
+<meta name="robots" content="noindex, follow">
+<title>Between Worlds | 10 Days in Southern Xinjiang · Intriq Journal Concept</title>
+<meta name="description" content="Ten days from the Pamirs to the Tianshan: Karakul Lake, Kashgar’s old town, the Taklamakan crossing and the painted caves of Kizil. A private journey from SGD 7,580.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Between Worlds | 10 Days in Southern Xinjiang">
+<meta property="og:description" content="A private journey from the Pamirs across the Taklamakan to the painted caves of Kizil.">
+<meta property="og:image" content="https://mengliang10.github.io/Condetest/assets/xinjiang/karakul.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#20312e;--dark:#17312f;--deep:#102825;--cream:#f6f3eb;--paper:#fffcf7;--muted:#5c6a64;--line:#dcd6c7;--gold:#8a5f34;--warm:#d1b38e;--serif:'Playfair Display',Georgia,serif;--sans:'DM Sans',Arial,sans-serif}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--cream);color:var(--ink);font:400 16px/1.75 var(--sans);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}a{color:inherit}h1,h2,h3,p,figure,ul{margin-top:0}h1,h2,h3{font-family:var(--serif);font-weight:400;letter-spacing:-.025em;line-height:1.15}
+button,input,select,textarea{font:inherit;color:inherit}:focus-visible{outline:3px solid #a77836;outline-offset:3px}
+.skip{position:absolute;top:-70px;left:12px;background:#fff;padding:12px;z-index:100}.skip:focus{top:12px}
+.strip{background:#eadfce;color:#4b3d31;text-align:center;font:600 11px/1.5 var(--sans);letter-spacing:.04em;padding:7px 16px}
+.nav{position:sticky;top:0;z-index:50;height:70px;background:var(--paper);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 max(22px,calc((100vw - 1240px)/2))}
+.brand{text-decoration:none;font:500 25px/1 var(--serif)}.brand small{display:block;font:700 9px/1.4 var(--sans);letter-spacing:.25em;text-transform:uppercase;margin-top:6px}
+.nav nav{display:flex;align-items:center;gap:26px;font:700 12px var(--sans);letter-spacing:.08em;text-transform:uppercase}.nav nav a{text-decoration:none}.nav nav a:not(.btn):hover{text-decoration:underline;text-underline-offset:5px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:10px 22px;border:1px solid currentColor;text-decoration:none;font:700 12px/1.4 var(--sans);letter-spacing:.1em;text-transform:uppercase;background:none;cursor:pointer;transition:background .2s,color .2s}
+.gold{background:var(--gold);border-color:var(--gold);color:#fff!important}.gold:hover{background:var(--dark);border-color:var(--dark)}.ghost:hover{background:#fff;color:var(--dark)}
+.wrap{max-width:1240px;margin:auto;padding:0 28px}.sec{padding:clamp(64px,8vw,110px) 0}
+.kick{font:700 11px/1.5 var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+h2{font-size:clamp(34px,4.6vw,62px);margin:12px 0 20px}
+.hero{background:var(--dark);color:var(--paper)}.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(30px,5vw,80px);align-items:center;padding-top:clamp(48px,6vw,88px);padding-bottom:clamp(48px,6vw,88px)}
+.hero .kick{color:var(--warm)}.hero h1{font-size:clamp(56px,7.4vw,108px);margin:20px 0 24px}.hero h1 em{color:var(--warm)}
+.lede{font-size:clamp(16px,1.3vw,19px);line-height:1.8;max-width:600px;color:#e0e8e1}
+.acts-row{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 18px}.hero .ghost{color:var(--paper)}
+.from{font-size:14px;color:#c9d8ce;margin:0}.from b{font:400 32px/1 var(--serif);color:#fff;margin:0 4px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0;margin:22px 0 0}.chips li{font-size:12px;border:1px solid #6f8a82;padding:5px 11px;color:#d8e3db}
+.postcard{position:relative;margin:0 14px 14px 0}.postcard:before{content:"";position:absolute;inset:14px -14px -14px 14px;border:1px solid var(--warm)}
+.postcard img{position:relative;width:100%;max-width:460px;aspect-ratio:460/416;object-fit:cover;margin-left:auto}
+.postcard figcaption{position:relative;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:#b7c7be;margin-top:14px;max-width:460px;margin-left:auto}
+.nums{background:var(--paper);border-bottom:1px solid var(--line)}.nums ul{list-style:none;display:grid;grid-template-columns:repeat(5,1fr);gap:20px;max-width:1240px;margin:auto;padding:34px 28px}
+.nums b{display:block;font:400 clamp(30px,4vw,48px)/1.1 var(--serif);color:var(--dark)}.nums span{display:block;font-size:12px;line-height:1.5;color:var(--muted)}
+.premise{display:grid;grid-template-columns:.8fr 1.2fr;gap:clamp(36px,8vw,130px)}.premise .prose{font-size:18px;line-height:1.9}.thesis{font:400 clamp(22px,2.4vw,30px)/1.4 var(--serif);border-left:2px solid var(--gold);padding-left:22px;margin:30px 0 0}
+.act{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:clamp(32px,7vw,90px);margin-top:80px}.act.rev figure{order:2}.act figure{position:relative;margin:0}
+.act figure img{width:100%;aspect-ratio:460/416;object-fit:cover}.act figcaption{position:absolute;left:14px;bottom:14px;background:#0e2926d9;color:#fff;padding:8px 12px;font-size:11px;letter-spacing:.04em}
+.act h3{font-size:clamp(34px,4vw,54px);margin:14px 0 18px}.act p{line-height:1.85}.moment{background:var(--paper);border-left:3px solid var(--gold);padding:14px 18px;font-size:15px}.moment b{display:block;font:700 11px var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);margin-bottom:4px}
+.more{font:700 12px var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--gold);text-decoration:none;border-bottom:1px solid currentColor}.more:hover{color:var(--dark)}
+.dark{background:var(--dark);color:#f9f6ef}.dark .kick{color:#c7a880}.fit{display:grid;grid-template-columns:.8fr 1.2fr;gap:8%}.fit p,.fit li{color:#d3ded5}.fit ul{padding-left:20px;margin:0 0 30px}.fit li{margin-bottom:10px;font-size:15px}.fit h3{font-size:25px;margin-bottom:12px}
+.route{display:grid;grid-template-columns:1fr 1.1fr;gap:56px;align-items:center}.route h2{font-size:clamp(34px,4.4vw,56px)}.route figure{background:#f0e9df;padding:18px;margin:0}.route img{max-height:540px;width:auto;margin:auto}.route figcaption{font-size:11px;color:var(--muted);text-align:center;margin-top:8px}
+.stops{display:flex;flex-wrap:wrap;gap:8px;list-style:none;padding:0}.stops li{border:1px solid var(--line);background:var(--paper);padding:6px 10px;font-size:12px}
+.sched{background:var(--paper)}.sh{display:flex;align-items:end;justify-content:space-between;gap:24px;flex-wrap:wrap}.sh h2{margin:8px 0 0}.sh .btn{min-height:42px;color:var(--dark)}
+.days{margin-top:40px;border-top:1px solid var(--line)}.day{border-bottom:1px solid var(--line)}.day summary{display:grid;grid-template-columns:58px 1fr auto 24px;gap:18px;align-items:center;padding:22px 8px;cursor:pointer;list-style:none}.day summary::-webkit-details-marker{display:none}.day summary::after{content:"+";font-size:26px;font-weight:300;text-align:right}.day[open] summary::after{content:"\2013"}
+.day i{font:400 34px var(--serif);color:#8f7d62;font-style:normal}.day b{display:block;font:700 10px/1.5 var(--sans);letter-spacing:.13em;text-transform:uppercase;color:var(--gold)}.day em{font:400 clamp(20px,2.2vw,29px)/1.25 var(--serif);font-style:normal}.day u{text-decoration:none;font-size:12px;color:var(--muted)}
+.db{display:grid;grid-template-columns:210px 1fr;gap:26px;padding:0 8px 30px 84px;max-width:1000px;color:#41524b}.db.nopic{grid-template-columns:1fr}.db img{width:100%;aspect-ratio:460/416;object-fit:cover}.db p{margin-bottom:10px}.ov{font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}.note{font-size:13px;font-weight:600;color:#795d3d}
+.plan{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,8vw,110px)}.price{font:400 clamp(46px,6vw,66px)/1.05 var(--serif);margin:8px 0 6px}.price small{font:400 16px var(--sans)}.fine{font-size:12px;color:var(--muted)}.plan h3{font-size:26px;margin:28px 0 12px}.plan ul{padding-left:20px}.plan li{margin-bottom:9px;font-size:15px}.hotels li{list-style:none;margin-left:-20px}
+.enq{background:#eae5d9}.eg{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(32px,7vw,96px)}.enq h2{font-size:clamp(34px,4.6vw,60px)}
+.form{background:var(--paper);padding:clamp(22px,3.5vw,44px);box-shadow:0 12px 44px #253c3314}.form label,.form legend{display:block;font:700 11px var(--sans);letter-spacing:.11em;text-transform:uppercase;margin-bottom:8px}.form fieldset{border:0;padding:0;margin:0 0 20px}
+.form select,.form textarea,.form input[type=text]{width:100%;background:transparent;border:1px solid #bdb7aa;padding:12px 13px;border-radius:0}.form textarea{min-height:84px}.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}.f{margin-bottom:18px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:9px}.opts label{display:flex;gap:8px;align-items:center;border:1px solid var(--line);padding:9px 11px;margin:0;font:500 13px var(--sans);letter-spacing:0;text-transform:none;cursor:pointer}.form .btn{width:100%;min-height:54px}
+.priv{font-size:12px;color:var(--muted);margin:10px 0 0}.out{margin-top:20px;padding-top:18px;border-top:1px solid var(--line)}.out textarea{min-height:170px;font-size:13px}.out .acts-row{margin:10px 0 0}.out .btn{width:auto;min-height:44px;color:var(--dark)}
+.foot{background:var(--deep);color:#c0cfc7;padding:40px 28px 44px;font-size:12px}.foot div{max-width:1184px;margin:auto;display:flex;justify-content:space-between;gap:28px;flex-wrap:wrap}.foot strong{color:#fff}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:60;display:none;align-items:center;justify-content:space-between;gap:12px;background:var(--dark);color:#fff;padding:10px 16px;box-shadow:0 -6px 24px #0004}.sticky span{font-size:13px;line-height:1.3}.sticky b{font:400 20px var(--serif);display:block}.sticky .btn{min-height:44px;padding:8px 16px}
+.perday{font-size:15px;font-weight:500;color:var(--gold)}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;list-style:none;padding:0;margin:28px 0 70px}.steps li{background:var(--paper);border-top:2px solid var(--gold);padding:22px}.steps b{display:block;font:400 34px var(--serif);color:var(--gold)}.steps span{font-size:15px}
+.q{border-bottom:1px solid var(--line)}.q:first-of-type{border-top:1px solid var(--line)}.q summary{display:flex;justify-content:space-between;gap:16px;cursor:pointer;list-style:none;padding:18px 4px;font:400 clamp(19px,2vw,24px)/1.3 var(--serif)}.q summary::-webkit-details-marker{display:none}.q summary::after{content:"+";font-size:24px}.q[open] summary::after{content:"\2013"}.q p{margin:0;padding:0 4px 18px;max-width:760px;color:#41524b}
+.seas{background:#f3e9d6;border-left:3px solid var(--gold);padding:10px 14px;font-size:13px;margin:-4px 0 18px}.share{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}.share .btn{min-height:42px;padding:8px 16px;color:var(--dark)}
+@media(max-width:900px){.steps{grid-template-columns:1fr}}
+@media print{.strip,.nav,.sticky,.enq,.sh .btn,.more,.share,.skip{display:none!important}body{background:#fff}.hero,.dark{background:#fff!important}.hero *,.dark *{color:#111!important}.sec{padding:24px 0}.hero .wrap{padding:24px 28px}img{break-inside:avoid}}
+@media(max-width:900px){.hero .wrap,.premise,.act,.fit,.route,.plan,.eg{grid-template-columns:1fr}.act.rev figure{order:0}.postcard{margin-right:14px}.postcard img,.postcard figcaption{margin-left:0}.nums ul{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.nav nav a:not(.btn){display:none}.nav{padding:0 18px}.wrap{padding:0 20px}.act{margin-top:56px}.day summary{grid-template-columns:40px 1fr 22px;gap:12px}.day u{display:none}.day i{font-size:26px}.db{grid-template-columns:1fr;padding:0 6px 26px 52px}.db img{max-width:260px}.opts,.two{grid-template-columns:1fr}.sticky.on{display:flex}.foot{padding-bottom:90px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn{transition:none}}
+</style>
 </head>
 <body>
 <a class="skip" href="#main">Skip to main content</a>
+<div class="strip">Design concept for Intriq Journey · Not the official booking page · Pricing and availability confirmed on enquiry</div>
 <header class="nav">
-  <a href="index.html" class="brand" aria-label="Intriq Journal homepage">Intriq<small>The travel journal</small></a>
-  <nav class="navlinks" aria-label="Page navigation">
-    <a class="disappear" href="#the-story">The story</a>
-    <a class="disappear" href="#itinerary">The journey</a>
-    <a href="index.html" class="disappear">Journal home</a>
-    <a href="#enquire" class="navcta">Shape your journey</a>
-  </nav>
+<a href="index.html" class="brand" aria-label="Intriq Journal home">Intriq<small>The travel journal</small></a>
+<nav aria-label="Page"><a href="#story">The story</a><a href="#itinerary">Day by day</a><a href="#price">Price</a><a href="#faq">FAQ</a><a class="btn gold" data-cta="nav" href="#enquire">Check availability</a></nav>
 </header>
-<div class="concept">EDITORIAL REDESIGN CONCEPT · NOT AN OFFICIAL INTRIQ BOOKING PAGE · PRICE REQUIRES CONFIRMATION</div>
 <main id="main">
-<section class="hero" aria-labelledby="hero-title">
-  <div class="hero-copy">
-    <span class="kicker">Private journeys / China / Southern Xinjiang</span>
-    <h1 id="hero-title">Between<br><em>worlds.</em></h1>
-    <p class="herolede">A living crossroads in Kashgar. The high silence of the Pamirs. The vast distances of the Taklamakan. Buddhist art carved into desert cliffs. One journey across the many histories of Southern Xinjiang.</p>
-    <div class="hero-actions"><a class="button primary" href="#the-story">Discover the story</a><a class="button" href="#itinerary">Explore all 10 days</a></div>
-    <div class="hero-facts" aria-label="Journey overview"><div><strong>10 days</strong><span>9 nights</span></div><div><strong>Private</strong><span>Tailor-made</span></div><div><strong>SGD 7,580*</strong><span>From, per person</span></div></div>
-  </div>
-  <div class="hero-visual"><img src="assets/xinjiang/karakul.jpg" alt="Karakul Lake and snow-covered Pamir mountains under a blue sky" fetchpriority="high" width="460" height="416"><div class="hero-caption"><strong>01 / The high Pamirs</strong><span>Karakul Lake · 3,600 m approx.</span></div></div>
-</section>
-<section class="section container opening" id="the-story">
-  <div><div class="accent-rule"></div><span class="kicker">The editorial proposition</span><h2>Beyond a place on the map.</h2></div>
-  <div class="prose"><p>The Silk Road was never a single road. Southern Xinjiang's mountain passes, oasis towns and desert corridors formed part of wider networks through which people, beliefs, crafts and goods moved across Asia.</p><p>To experience this region is to follow the connections. The old streets of Kashgar begin the conversation. The Pamirs explain the geography. Yarkant and Hotan reveal the importance of oasis cities. At Kuqa, the Kizil Caves open a different chapter: the Buddhist heritage that preceded and overlapped with other traditions along these routes.</p><p>Intriq's published ten-day itinerary contains all these elements. This editorial reimagining gives them one unifying idea: <strong>travel not simply from site to site, but from one layer of history to another.</strong></p></div>
-</section>
-<section class="statement" aria-label="Editorial thesis"><span class="kicker">A different kind of discovery</span><blockquote>“The most memorable part of a journey may be the connection you finally see between places that once seemed unrelated.”</blockquote><cite>Editorial concept · Not a traveller testimonial</cite></section>
-<section class="section acts container" id="chapters">
-  <div class="section-header"><span class="kicker">The three acts</span><h2>A journey with a narrative, not just a route.</h2><p>Three distinct chapters turn ten days of sightseeing and driving into a clearer reason to travel.</p></div>
-  <article class="act">
-    <figure class="act-media"><img src="assets/xinjiang/kashgar.jpg" loading="lazy" decoding="async" width="460" height="416" alt="Old Kashgar buildings and a domed minaret under evening light"><figcaption>Kashgar · The crossroads</figcaption></figure>
-    <div class="act-copy"><span class="overline">Act I · Days 1–4</span><h3>Where the mountains meet cultures.</h3><p>Begin in Kashgar, a city shaped by Central Asian connections. Drive into the Pamirs, where glacial lakes and great mountain roads make geography impossible to ignore. Return through Tajik communities and the old town's working streets.</p><p>The most personal encounter in the published programme is a lunch in a Tajik home, with an opportunity to help prepare food. It matters more than another photograph of a monument because it offers a human context for the landscape.</p><p class="details">In the itinerary: Karakul Lake picnic · Panlong road · Stone City · Tajik-home lunch · Kashgar crafts · Sunday livestock market if dates align</p></div>
-  </article>
-  <article class="act reverse">
-    <figure class="act-media"><img src="assets/xinjiang/desert.jpg" loading="lazy" decoding="async" width="460" height="416" alt="The Taklamakan Desert Highway crossing dry ridges and desert terrain"><figcaption>The Taklamakan · A landscape of distance</figcaption></figure>
-    <div class="act-copy"><span class="overline">Act II · Days 5–6</span><h3>The distance between oases.</h3><p>The journey continues through Yarkant, with a visit to the Altun Mosque complex and the tomb of Amannisa Khan, a musician and queen remembered in Uyghur cultural history. Hotan follows, then the long crossing toward Kuqa.</p><p>Six hundred and fifty kilometres of desert highway may be demanding. It also gives the region a scale no list of attractions can convey. The aim is not to romanticise a transfer, but to help travellers understand its role in the larger story.</p><p class="details">In the itinerary: Yarkant heritage · Hotan · Taklamakan Desert Highway · Tarim River landscapes · Poplar forests</p></div>
-  </article>
-  <article class="act">
-    <figure class="act-media"><img src="assets/xinjiang/kuqa.jpg" loading="lazy" decoding="async" width="460" height="416" alt="Reddish rock formations in the Kuqa region of Xinjiang"><figcaption>Kuqa · Older layers of exchange</figcaption></figure>
-    <div class="act-copy"><span class="overline">Act III · Days 7–10</span><h3>The stories left in stone.</h3><p>The Kizil Caves carry evidence of the movement of religious ideas and artistic traditions along the trade routes. In Urumqi, archaeological collections add another perspective on the peoples who lived and travelled here.</p><p>The final day at Tianchi Lake is a change of rhythm and scenery. After mountains, cities and desert roads, an alpine landscape provides a quieter ending before departure.</p><p class="details">In the itinerary: Kizil Caves · Kuqa old town · Xinjiang Regional Museum, timing permitting · Tianchi Lake</p></div>
-  </article>
-  <div class="photoessay" aria-label="Scenes along the route"><figure><img src="assets/xinjiang/panlong.jpg" loading="lazy" decoding="async" width="460" height="416" alt="The switchbacks of Panlong Ancient Road winding between mountains"><figcaption>Panlong · the mountain road</figcaption></figure><figure><img src="assets/xinjiang/street.jpg" loading="lazy" decoding="async" width="460" height="416" alt="Traditional architecture and lantern in a Kashgar street"><figcaption>Kashgar · craft and everyday life</figcaption></figure><figure><img src="assets/xinjiang/tianchi.jpg" loading="lazy" decoding="async" width="460" height="416" alt="Frozen-blue Tianchi Lake beneath snowy Tianshan mountains"><figcaption>Tianchi · a different kind of silence</figcaption></figure></div>
-  <div class="microgrid" aria-label="Editorial differentiators">
-    <div class="micro"><b>01 / HUMAN CONNECTION</b><h4>Meet the people, respectfully.</h4><p>The scheduled Tajik-home lunch offers more personal context than a generic cultural demonstration. Hosting arrangements and consent must be confirmed.</p></div>
-    <div class="micro"><b>02 / CULTURAL DEPTH</b><h4>Connect the chapters.</h4><p>A specialist's value lies in explaining why Kashgar, Yarkant and Kizil belong to one story, not simply arranging the stops.</p></div>
-    <div class="micro"><b>03 / PRACTICAL JUDGEMENT</b><h4>Make complexity manageable.</h4><p>High-altitude travel, border documentation, 4×4 mountain routes and lengthy overland days require realistic planning.</p></div>
-  </div>
-</section>
-<section class="dark-panel" id="the-difference"><div class="container differentiation"><div><span class="kicker">The real bespoke proposition</span><h2>What a map cannot do for you.</h2><p style="color:#d3ded5">A private itinerary only earns its premium when its choices and execution create genuine value. These are the capabilities worth proving, rather than assuming.</p></div><div class="truths">
-  <div class="truth"><h3><span class="num">01</span>Choose the right pace.</h3><p>The itinerary contains a six-hour drive to Tashkurgan and an approximately eight-hour desert transfer. A specialist should explain the trade-offs and adapt the route to the travellers, not conceal the effort.</p></div>
-  <div class="truth"><h3><span class="num">02</span>Interpret, don't just escort.</h3><p>The published package includes an English-speaking local guide. The differentiator to validate is the quality of cultural interpretation, the guide's expertise and their ability to respond to individual interests.</p></div>
-  <div class="truth"><h3><span class="num">03</span>Own the details.</h3><p>Permits, flight connections, hotel standards, seasonal conditions and access restrictions need to be checked and coordinated. Seamless execution is valuable only when demonstrable.</p></div>
-</div></div></section>
-<section class="section container" id="route"><div class="routeblock"><div><span class="kicker">The geography of the journey</span><h2>Ten days.<br>Six principal stops.<br>One connected route.</h2><p>Begin at Kashgar, make a mountain excursion to Tashkurgan, cross the southern oases through Yarkant and Hotan, continue to Kuqa and finish in Urumqi.</p><p>Some of the longest days are on the road. This itinerary is best suited to travellers who value cultural depth and substantial landscapes more than minimal transit time.</p><div class="routepoints"><span>Kashgar</span><span>Tashkurgan</span><span>Yarkant</span><span>Hotan</span><span>Kuqa</span><span>Urumqi</span></div></div><figure class="map"><img src="assets/xinjiang/route-map.jpg" alt="Source itinerary map showing the Southern Xinjiang route and the cities of Kashgar, Tashkurgan, Yarkant, Hotan and Kuqa" loading="lazy" decoding="async" width="800" height="800"><figcaption>Route illustration from the supplied Intriq Journey itinerary. Not for navigation.</figcaption></figure></div></section>
-<section class="section schedule" id="itinerary"><div class="container"><div class="schedule-header"><div><span class="kicker">The journey, day by day</span><h2>Ten days, one unfolding story.</h2></div><p class="schedule-intro">Open any day for the details. This section preserves the published route while clarifying what is planned, optional or subject to local conditions.</p></div>
-<div class="daylist">
- <details class="day" open><summary><span class="daynum">01</span><span><span class="dayroute">Arrive in Kashgar</span><br><span class="daytitle">The threshold of a different world</span></span><span class="dayplace">Kashgar</span><span class="plus" aria-hidden="true">+</span></summary><div class="daybody"><p>Meet the local guide at Kashgar airport. The published itinerary provides for border-permit arrangements near the airport before hotel transfer. Take the afternoon to settle in and orient yourself in the city.</p><p class="overnight">Overnight · Radisson Blu Hotel Kashgar</p></div></details>
- <details class="day"><summary><span class="daynum">02</span><span><span class="dayroute">Kashgar → Tashkurgan</span><br><span class="daytitle">Into the high Pamirs</span></span><span class="dayplace">Approx. 300 km / 6 hr</span><span class="plus" aria-hidden="true">+</span></summary><div class="daybody"><p>Travel by 4×4 Toyota Prado convoy into the Pamirs. Pass White Sand Lake and stop at Karakul Lake, approximately 3,600 metres above sea level, for an outdoor picnic. Continue to Tashkurgan for a yak hot-pot dinner.</p><p class="overnight">Overnight · Panoramic Star Hotel</p><p class="caveat">At altitude: suitable pacing and personal health considerations should be discussed before travel.</p></div></details>
- <details class="day"><summary><span class="daynum">03</span><span><span class="dayroute">Tashkurgan → Kashgar</span><br><span class="daytitle">Mountain roads, human stories</span></span><span class="dayplace">Pamir region</span><span class="plus" aria-hidden="true">+</span></summary><div class="daybody"><p>See sunrise at Golden Grass Beach and visit Stone City. Travel the winding Panlong road and the Tasha route, passing near the Wakhan Corridor and views of the Yarkant River. The original programme includes a Tajik-home lunch with participation in preparing barbecue and milk tea, before the return to Kashgar.</p><p class="caveat">Apricot blossoms are only a seasonal possibility, not a promised experience.</p><p class="overnight">Overnight · Radisson Blu Hotel Kashgar</p></div></details>
- <details class="day"><summary><span class="daynum">04</span><span><span class="dayroute">Kashgar</span><br><span class="daytitle">The living city</span></span><span class="dayplace">Kashgar</span><span class="plus" aria-hidden="true">+</span></summary><div class="daybody"><p>Discover the old town's streets and working crafts, visit Id Kah Mosque and the Abakh Khoja mausoleum. The livestock market is a potential addition only when the date falls on a Sunday; a city market visit is subject to time and interest.</p><p class="overnight">Overnight · Radisson Blu Hotel Kashgar</p></div></details>
- <details class="day"><summary><span class="daynum">05</span><span><span class="dayroute">Kashgar → Yarkant → Hotan</span><br><span class="daytitle">Oasis cities of the Silk Road</span></span><span class="dayplace">Approx. 500 km / 5.5 hr</span><span class="plus" aria-hidden="true">+</span></summary><div class="daybody"><p>Travel toward Hotan through Yarkant, once an important Silk Road city. Visit the Altun Mosque complex, the tomb of Amannisa Khan and the old town, with lunch en route.</p><p class="overnight">Overnight · Hotan Silk Road Welcome Hotel</p></div></details>
- <details class="day"><summary><span class="daynum">06</span><span><span class="dayroute">Hotan → Kuqa</span><br><span class="daytitle">Across the Taklamakan</span></span><span class="dayplace">Approx. 650 km / 8 hr</span><span class="plus" aria-hidden="true">+</span></summary><div class="daybody"><p>Follow the Taklamakan Desert Highway toward Kuqa. The original programme describes views of the Tarim River, poplar forests and desert villages along the route. It is a substantial overland day, best approached with realistic expectations.</p><p class="overnight">Overnight · Kuqa Tian Yuan International Hotel</p></div></details>
- <details class="day"><summary><span class="daynum">07</span><span><span class="dayroute">Kuqa</span><br><span class="daytitle">The paintings in the caves</span></span><span class="dayplace">Kizil Caves</span><span class="plus" aria-hidden="true">+</span></summary><div class="daybody"><p>Visit the Kizil Caves, a Buddhist rock-cut complex whose art reflects cultural influences transmitted along Silk Road routes. Continue to the historic streets of Kuqa; the King's Mansion is a possible addition if time permits.</p><p class="caveat">Confirm which caves are accessible and whether photography is permitted.</p><p class="overnight">Overnight · Kuqa Tian Yuan International Hotel</p></div></details>
- <details class="day"><summary><span class="daynum">08</span><span><span class="dayroute">Kuqa → Urumqi</span><br><span class="daytitle">Archaeology and the modern city</span></span><span class="dayplace">Domestic flight</span><span class="plus" aria-hidden="true">+</span></summary><div class="daybody"><p>Fly from Kuqa to Urumqi. If arrival time permits, visit the Xinjiang Uygur Autonomous Region Museum, with collections illuminating the region's ancient history.</p><p class="caveat">The source specifies flight CZ6872, 09:55–11:00. This is a historical itinerary reference, not a verified current schedule; the domestic fare is excluded.</p><p class="overnight">Overnight · Conrad Urumqi</p></div></details>
- <details class="day"><summary><span class="daynum">09</span><span><span class="dayroute">Urumqi / Tianchi Lake</span><br><span class="daytitle">A quieter horizon</span></span><span class="dayplace">Tianshan Mountains</span><span class="plus" aria-hidden="true">+</span></summary><div class="daybody"><p>Spend the day at Tianchi Lake, on the northern slopes of the Tianshan Mountains. Walk amidst alpine scenery and take time to reflect on the very different landscapes traversed during the preceding week.</p><p class="overnight">Overnight · Conrad Urumqi</p></div></details>
- <details class="day"><summary><span class="daynum">10</span><span><span class="dayroute">Departure from Urumqi</span><br><span class="daytitle">Take the journey with you</span></span><span class="dayplace">Departure</span><span class="plus" aria-hidden="true">+</span></summary><div class="daybody"><p>Breakfast and transfer to the airport for your departure. Any onward journey or extension requires a separate arrangement.</p></div></details>
+
+<section class="hero" aria-labelledby="t">
+<div class="wrap">
+<div>
+<span class="kick">Private journey · Southern Xinjiang · 10 days</span>
+<h1 id="t">Between<br><em>worlds.</em></h1>
+<p class="lede">On Day 2 you picnic beside a glacial lake at 3,600 metres. On Day 6 you cross the Taklamakan by road. On Day 7 you stand inside painted Buddhist caves. Ten days from the Pamirs to the Tianshan, following the Silk Road through its southern oases.</p>
+<div class="acts-row"><a class="btn gold" data-cta="hero" href="#enquire">Check dates &amp; availability</a><a class="btn ghost" href="#story">Read the story</a></div>
+<p class="from">From<b>SGD 7,580</b>per person · twin share · excludes international flights</p>
+<ul class="chips" aria-label="Highlights"><li>Private &amp; tailor-made</li><li>English-speaking local guide</li><li>4×4 convoy through the Pamirs</li><li>Border permit arranged on arrival</li></ul>
 </div>
-<div class="journey-note"><strong>Important distinction</strong><span>The source's headline highlights mention the Duku Highway and “exclusive experiences”. Its detailed day-by-day route does not document a Duku Highway crossing or specify exclusive/private access. Neither is promised in this editorial concept without confirmation.</span></div>
-</div></section>
-<section class="section container planning" id="details">
- <div><span class="kicker">A practical foundation</span><h2>Beautiful stories need precise details.</h2><p class="price">SGD 7,580<span> / person*</span></p><p class="fineprint">*Indicative starting price in the user-supplied itinerary snapshot. Pricing may change with dates, party size, hotels and requested modifications. Not a live quotation.</p><p>Private itinerary · 10 days / 9 nights · Kashgar to Urumqi</p><h3>Published accommodation plan</h3><p>Kashgar: Radisson Blu · Tashkurgan: Panoramic Star · Hotan: Silk Road Welcome · Kuqa: Tian Yuan International · Urumqi: Conrad.</p><p class="fineprint">Accommodation is subject to availability and final confirmation. A private journey is not automatically a uniformly five-star journey.</p></div>
- <div><h3>What the source includes</h3><ul><li>Nine nights' accommodation on a twin-sharing, bed-and-breakfast basis, unless a single supplement applies</li><li>Ground transportation and transfers in air-conditioned vehicles</li><li>Services of a local English-speaking guide</li><li>Entrance fees for stated sightseeing</li><li>Gratuities for local guides, porters and other local service staff</li></ul><h3>What the source excludes</h3><ul><li>International flights and taxes</li><li>Domestic Kuqa–Urumqi flight</li><li>Visa and entry taxes where applicable</li><li>Travel insurance and personal expenses</li></ul><p class="fineprint">Confirm current border documentation, accessibility, weather, specific hotel room categories, meal arrangements and any local hosting activity with Intriq before booking.</p></div>
+<figure class="postcard"><img src="assets/xinjiang/karakul.jpg" alt="Karakul Lake and snow-covered Pamir peaks under a blue sky" width="460" height="416" fetchpriority="high"><figcaption>Day 2 · Karakul Lake · about 3,600 m</figcaption></figure>
+</div>
 </section>
-<section class="qualify" id="enquire"><div class="container qualify-grid"><div><span class="kicker">From inspiration to a meaningful conversation</span><h2>What would make this journey yours?</h2><p>A thoughtfully designed private trip starts by understanding the traveller. Select the interests and pace that matter, then open a pre-addressed email to discuss them with Intriq.</p><p>This is an editorial prototype of a segment-qualified enquiry experience, not a connected CRM form.</p><a href="https://www.intriqjourney.com/itinerary/10-days-heritage-of-southern-xinjiang/" target="_blank" rel="noopener noreferrer" style="font-size:12px;text-underline-offset:5px">View the original Intriq itinerary ↗</a></div>
-<form class="formbox" id="journey-form"><fieldset><legend>What draws you to Southern Xinjiang?</legend><div class="options"><label><input type="checkbox" name="interest" value="Culture and local communities"> Culture and people</label><label><input type="checkbox" name="interest" value="Silk Road history and archaeology"> History and archaeology</label><label><input type="checkbox" name="interest" value="Mountain landscapes and photography"> Landscapes and photography</label><label><input type="checkbox" name="interest" value="Food and local traditions"> Food and traditions</label></div></fieldset><div class="field"><label for="pace">Preferred pace</label><select id="pace" name="pace"><option value="Balanced, with time to absorb each place">Balanced, with time to absorb each place</option><option value="Slower, fewer stops and longer stays">Slower, fewer stops</option><option value="Active, comfortable with long driving days">Active, comfortable with long drives</option></select></div><div class="field"><label for="travellers">Travel party</label><select id="travellers" name="travellers"><option>Couple / two travellers</option><option>Solo traveller</option><option>Family with children</option><option>Multi-generational family</option><option>Private friends group</option></select></div><div class="field"><label for="notes">Priorities or constraints (optional)</label><textarea id="notes" name="notes" maxlength="800" placeholder="e.g. April dates, mobility needs, preferred hotel standard, photography interests..."></textarea></div><button type="submit" class="button dark">Prepare my enquiry ↗</button><p class="privacy">Opens your email application. This static demonstration does not store or transmit your selections to a server; nothing is sent unless you send the email.</p></form>
+
+<section class="nums" aria-label="The journey in numbers"><ul>
+<li><b>3,600 m</b><span>Picnic by Karakul Lake, high on the Pamir Plateau</span></li>
+<li><b>200+</b><span>Bends on the Panlong road, a route linked to the monk Xuanzang</span></li>
+<li><b>650 km</b><span>Across the Taklamakan Desert Highway to Kuqa</span></li>
+<li><b>236</b><span>Rock-cut Buddhist grottoes at Kizil</span></li>
+<li><b>4,000 yrs</b><span>Age of the “Loulan Beauty” in Urumqi’s museum</span></li>
+</ul></section>
+
+<section class="wrap sec premise" id="story">
+<div><span class="kick">The premise</span><h2>A road is a story told in distance.</h2></div>
+<div class="prose">
+<p>Kashgar sits at 1,300 metres, at the foot of the Karakoram, within a day’s drive of Pakistan, Afghanistan and Kyrgyzstan. It is often described as the heart of Turkestan identity: a city rooted more in the Islamic cultures of Central Asia than in those of China.</p>
+<p>From here the journey becomes a question: how did people, faiths and art cross a desert this vast? Ten days answer it in order. Mountains first, then oasis cities, then the long crossing, then the paintings left in the caves.</p>
+<p class="thesis">Travel not from site to site, but from one layer of history to the next.</p>
+</div>
+</section>
+
+<section class="wrap" style="padding-bottom:100px" aria-label="Three chapters">
+<span class="kick">Three chapters</span>
+<article class="act">
+<figure><img src="assets/xinjiang/kashgar.jpg" alt="Old Kashgar buildings and a domed minaret in warm light" loading="lazy" width="460" height="416"><figcaption>Kashgar · the crossroads</figcaption></figure>
+<div><span class="kick">Chapter I · Days 1–4</span><h3>Where the mountains meet cultures.</h3>
+<p>A convoy of 4×4 Prados climbs the Pamir Plateau past White Sand Lake and the peak known as “the father of the icebergs”, to a picnic beside Karakul Lake. Next morning, sunrise at Golden Grass Beach, then Stone City, once the royal city of the Puli Kingdom, and the Panlong road’s coiling bends.</p>
+<p>The heart of the chapter is lunch in a Tajik home, where you can help prepare barbecue and milk tea. Then back to Kashgar’s adobe lanes, where craftspeople give a lifetime to a single craft.</p>
+<p class="moment"><b>Plan around it</b>The livestock market runs on Sundays only. Arrive on a Thursday and Day 4 falls on a Sunday.</p>
+<a class="more" data-cta="chapter-1" data-interest="Culture and local communities" href="#enquire">Ask about this chapter</a></div>
+</article>
+<article class="act rev">
+<figure><img src="assets/xinjiang/desert.jpg" alt="The Taklamakan Desert Highway crossing dry ridges" loading="lazy" width="460" height="416"><figcaption>The Taklamakan · a landscape of distance</figcaption></figure>
+<div><span class="kick">Chapter II · Days 5–6</span><h3>The distance between oases.</h3>
+<p>In Yarkant, once a major Silk Road stop, you visit the Altun Mosque complex and the tomb of Amannisahan, a Uyghur musician and queen. Hotan follows, then 650 kilometres of desert highway beside the Tarim River, through poplar forests and desert villages.</p>
+<p class="moment"><b>Honest note</b>Day 6 is about eight hours on the road. It is also the day that gives the caves of Kuqa their meaning.</p>
+<a class="more" data-cta="chapter-2" data-interest="Mountain landscapes and photography" href="#enquire">Ask about this chapter</a></div>
+</article>
+<article class="act">
+<figure><img src="assets/xinjiang/kuqa.jpg" alt="Red rock formations in the Kuqa region" loading="lazy" width="460" height="416"><figcaption>Kuqa · older layers of exchange</figcaption></figure>
+<div><span class="kick">Chapter III · Days 7–10</span><h3>The stories left in stone.</h3>
+<p>The Kizil Caves, 236 grottoes cut into the cliffs, hold murals shaped by influences that travelled the Silk Road. In Urumqi, the regional museum shows people the desert preserved naturally, including the roughly 4,000-year-old “Loulan Beauty”.</p>
+<p>The finale is a full day at Tianchi, an alpine lake in the Tianshan, a quiet place to take in what you have crossed.</p>
+<a class="more" data-cta="chapter-3" data-interest="Silk Road history and archaeology" href="#enquire">Ask about this chapter</a></div>
+</article>
+</section>
+
+<section class="dark" aria-labelledby="fit"><div class="wrap sec fit">
+<div><span class="kick">Honest about the road</span><h2 id="fit">Is this journey for you?</h2><p>A private itinerary should feel right before you book it, so here is what to expect.</p></div>
+<div>
+<h3>It suits you if&hellip;</h3><ul><li>History, faith and art are why you travel</li><li>You enjoy long, scenic drives: about 6, 5.5 and 8 hours on Days 2, 5 and 6</li><li>You want time with local people, such as the Tajik-home lunch</li><li>You are comfortable at altitude (Day 2 reaches about 3,600 m)</li></ul>
+<h3>Think twice if&hellip;</h3><ul><li>You prefer minimal time in transit</li><li>You have heart or breathing conditions: please speak to your doctor first</li><li>You expect one hotel standard throughout: stays range from a boutique mountain garden hotel to international city hotels</li></ul>
+</div></div></section>
+
+<section class="wrap sec"><div class="route">
+<div><span class="kick">The route</span><h2>Six stops.<br>One connected line.</h2><p>Kashgar, a mountain excursion to Tashkurgan, then Yarkant and Hotan across the southern oases, Kuqa on the far side of the desert, and Urumqi to finish.</p>
+<ul class="stops"><li>Kashgar</li><li>Tashkurgan</li><li>Yarkant</li><li>Hotan</li><li>Kuqa</li><li>Urumqi</li></ul></div>
+<figure><img src="assets/xinjiang/route-map.jpg" alt="Route map from Kashgar and Tashkurgan through Yarkant, Hotan and Kuqa to Urumqi" loading="lazy" width="800" height="800"><figcaption>Route illustration from the Intriq Journey itinerary. Not for navigation.</figcaption></figure>
+</div></section>
+
+<section class="sched sec" id="itinerary"><div class="wrap">
+<div class="sh"><div><span class="kick">Day by day</span><h2>Ten days, one unfolding story.</h2></div><button class="btn ghost" id="ex" type="button" aria-pressed="false">Expand all days</button></div>
+<div class="days">
+<details class="day" open><summary><i>01</i><span><b>Arrive in Kashgar</b><em>The threshold of a different world</em></span><u>Kashgar</u></summary><div class="db"><img src="assets/xinjiang/kashgar.jpg" alt="Kashgar old town" loading="lazy"><div><p>Your local guide meets you at the airport, and border-control permits are applied for nearby before the hotel transfer. Settle in at 1,300 metres, in one of China’s most remote cities.</p><p class="ov">Overnight · Radisson Blu Hotel Kashgar</p></div></div></details>
+<details class="day"><summary><i>02</i><span><b>Kashgar → Tashkurgan</b><em>Into the high Pamirs</em></span><u>About 300 km · 6 hr</u></summary><div class="db"><img src="assets/xinjiang/karakul.jpg" alt="Karakul Lake" loading="lazy"><div><p>A convoy of 4×4 Toyota Prados climbs the Pamir Plateau, passing White Sand Lake. Picnic beside Karakul Lake at roughly 3,600 metres, then a yak hot-pot dinner in Tashkurgan.</p><p class="note">High altitude: please talk to your doctor before booking if you have heart or breathing conditions.</p><p class="ov">Overnight · Panoramic Star Hotel</p></div></div></details>
+<details class="day"><summary><i>03</i><span><b>Tashkurgan → Kashgar</b><em>Mountain roads, human stories</em></span><u>Pamir region</u></summary><div class="db"><img src="assets/xinjiang/panlong.jpg" alt="Panlong road switchbacks" loading="lazy"><div><p>Sunrise at Golden Grass Beach, then Stone City. Follow the Panlong road’s 200-plus bends and cross the Tasha road past the mouth of the Wakhan Corridor. Lunch is in a Tajik home, where you can help prepare barbecue and milk tea.</p><p class="note">Apricot blossom is possible between 23 March and 20 April, but not guaranteed.</p><p class="ov">Overnight · Radisson Blu Hotel Kashgar</p></div></div></details>
+<details class="day"><summary><i>04</i><span><b>Kashgar</b><em>The living city</em></span><u>Kashgar</u></summary><div class="db"><img src="assets/xinjiang/abakh-hoja.jpg" alt="Abakh Khoja tomb with green-tiled facade" loading="lazy"><div><p>Wander the old town’s adobe lanes and, if time allows, take brick tea with elders on Ustang Boyi street. Visit Id Kah Mosque, China’s largest, and the Abakh Khoja mausoleum. On a Sunday, start at the livestock market.</p><p class="ov">Overnight · Radisson Blu Hotel Kashgar</p></div></div></details>
+<details class="day"><summary><i>05</i><span><b>Kashgar → Yarkant → Hotan</b><em>Oasis cities of the Silk Road</em></span><u>About 500 km · 5.5 hr</u></summary><div class="db nopic"><div><p>Lunch in Yarkant, once an important Silk Road stop, with the Altun Mosque complex, the tomb of Amannisahan and the old town, before continuing to Hotan.</p><p class="ov">Overnight · Hotan Silk Road Welcome Hotel</p></div></div></details>
+<details class="day"><summary><i>06</i><span><b>Hotan → Kuqa</b><em>Across the Taklamakan</em></span><u>About 650 km · 8 hr</u></summary><div class="db"><img src="assets/xinjiang/desert.jpg" alt="Taklamakan Desert Highway" loading="lazy"><div><p>The Taklamakan Desert Highway, with views of the Tarim River, poplar forests and stops in desert villages. The longest day of the journey, and the one that gives what follows its weight.</p><p class="ov">Overnight · Kuqa Tian Yuan International Hotel</p></div></div></details>
+<details class="day"><summary><i>07</i><span><b>Kuqa</b><em>The paintings in the caves</em></span><u>Kizil Caves</u></summary><div class="db"><img src="assets/xinjiang/kuqa.jpg" alt="Red rock formations near Kuqa" loading="lazy"><div><p>The Kizil Caves, 236 rock-cut Buddhist grottoes whose murals show influences from across the Silk Road. Then about 80 km (2 hours) to Kuqa Ancient Town, once a great power and a centre of Buddhism; the King’s Mansion if time permits.</p><p class="note">Please ask us about cave access and photography rules.</p><p class="ov">Overnight · Kuqa Tian Yuan International Hotel</p></div></div></details>
+<details class="day"><summary><i>08</i><span><b>Kuqa → Urumqi</b><em>Archaeology and the modern city</em></span><u>Domestic flight</u></summary><div class="db"><img src="assets/xinjiang/museum.jpg" alt="Ceramic figures in the Xinjiang museum" loading="lazy"><div><p>A short flight to Urumqi (the source itinerary uses CZ6872, 09:55–11:00; schedule to be confirmed, fare not included). If timing allows, visit the Xinjiang Uygur Autonomous Region Museum and its naturally preserved mummies, including the “Loulan Beauty”.</p><p class="ov">Overnight · Conrad Urumqi</p></div></div></details>
+<details class="day"><summary><i>09</i><span><b>Urumqi / Tianchi Lake</b><em>A quieter horizon</em></span><u>Tianshan</u></summary><div class="db"><img src="assets/xinjiang/tianchi.jpg" alt="Tianchi Lake beneath snowy Tianshan peaks" loading="lazy"><div><p>A full day at Tianchi, the half-moon alpine lake on the slopes of Bogda Peak, with time to hike and to take in the week behind you.</p><p class="ov">Overnight · Conrad Urumqi</p></div></div></details>
+<details class="day"><summary><i>10</i><span><b>Departure from Urumqi</b><em>Take the journey with you</em></span><u>Departure</u></summary><div class="db"><img src="assets/xinjiang/urumqi.jpg" alt="Carved brick towers in Urumqi" loading="lazy"><div><p>Breakfast, then transfer to the airport for your flight home.</p></div></div></details>
+</div></div></section>
+
+<section class="wrap sec plan" id="price">
+<div><span class="kick">Investment</span><h2>What the journey includes.</h2>
+<p class="price">SGD 7,580<small> per person</small></p>
+<p class="perday">About SGD 758 per person per day, with accommodation, guide, ground transport and entrance fees included.</p>
+<p class="fine">Indicative starting price, twin share; a single supplement may apply. It varies with dates, party size and any tailoring, and is confirmed in your quotation.</p>
+<h3>Where you stay</h3>
+<ul class="hotels"><li><b>Kashgar</b> · Radisson Blu Hotel, the city’s first international hotel</li><li><b>Tashkurgan</b> · Panoramic Star, a boutique garden hotel facing Golden Grass Beach</li><li><b>Hotan</b> · Silk Road Welcome Hotel</li><li><b>Kuqa</b> · Tian Yuan International Hotel</li><li><b>Urumqi</b> · Conrad Urumqi</li></ul>
+<p class="fine">Subject to availability and final confirmation.</p></div>
+<div><h3 style="margin-top:0">Included</h3><ul><li>Nine nights’ accommodation, twin share, with breakfast</li><li>Transfers and ground transport in air-conditioned vehicles, plus the 4×4 convoy in the Pamirs</li><li>English-speaking local guide</li><li>Entrance fees for the sights listed</li><li>Gratuities for local guides, porters and staff</li></ul>
+<h3>Not included</h3><ul><li>International flights and taxes</li><li>Kuqa–Urumqi domestic flight</li><li>Visa and entry taxes, where required</li><li>Travel insurance and personal expenses</li></ul></div>
+</section>
+
+<section class="wrap sec" id="faq">
+<span class="kick">How it works</span><h2>Three steps to your itinerary.</h2>
+<ol class="steps"><li><b>1</b><span><strong>Tell us your window and interests.</strong> The form below takes about two minutes.</span></li><li><b>2</b><span><strong>Receive availability and a quote.</strong> A specialist confirms dates, hotels and the price for your party.</span></li><li><b>3</b><span><strong>Refine, then confirm.</strong> Adjust the pace and stops until the route feels right.</span></li></ol>
+<span class="kick">Good questions</span><h2>Before you enquire.</h2>
+<details class="q"><summary>Is this a group tour?</summary><p>No. It is a private, tailor-made journey with an English-speaking local guide, and the route and pace can be tailored to your party.</p></details>
+<details class="q"><summary>How demanding is it?</summary><p>The demands are drives and altitude, not hiking. Days 2, 5 and 6 are about 6, 5.5 and 8 hours on the road, and Day 2 reaches about 3,600 metres at Karakul Lake. If you have heart or breathing conditions, speak to your doctor first.</p></details>
+<details class="q"><summary>What about visas and permits?</summary><p>Border-control permits are applied for near Kashgar airport on arrival. Visa and entry taxes are not included, so tell us your passport when you enquire and we will confirm current requirements.</p></details>
+<details class="q"><summary>When is the best time to go?</summary><p>It depends on what you want to see. Apricot blossom is possible between 23 March and 20 April, and Kashgar’s livestock market runs on Sundays only. Tell us your window and we will advise what to expect.</p></details>
+<details class="q"><summary>What is not in the price?</summary><p>International flights and taxes, the Kuqa–Urumqi domestic flight, visa and entry taxes, travel insurance and personal expenses. A single supplement may apply if you are not sharing a room.</p></details>
+<details class="q"><summary>Can I add days or other destinations?</summary><p>Yes. Extensions and onward travel are arranged separately; tell us what you have in mind.</p></details>
+</section>
+
+<section class="enq" id="enquire"><div class="wrap sec eg">
+<div><span class="kick">Your turn</span><h2>Tell us how you’d like to go.</h2>
+<p>Share your dates and what draws you. A specialist replies with availability and a tailored quote. No payment, no commitment.</p>
+<p>Prefer to write directly? <a href="mailto:enquiry@intriqjourney.com" data-cta="email">enquiry@intriqjourney.com</a>, or <a href="mailto:enquiry@intriqjourney.com?subject=Question%20about%20the%20Southern%20Xinjiang%20journey" data-cta="question">ask a quick question</a>.</p>
+<p><a href="https://www.intriqjourney.com/itinerary/10-days-heritage-of-southern-xinjiang/" target="_blank" rel="noopener noreferrer">View the original Intriq itinerary ↗</a></p>
+<p style="margin:24px 0 0"><strong>Planning with someone?</strong></p>
+<div class="share"><a class="btn ghost" id="wa" target="_blank" rel="noopener noreferrer" href="#" data-cta="share-whatsapp">Share on WhatsApp</a><button class="btn ghost" type="button" id="cl">Copy link</button><button class="btn ghost" type="button" id="pr">Save as PDF</button></div></div>
+<form class="form" id="f">
+<div class="two"><div class="f"><label for="name">Your name</label><input type="text" id="name" name="name" autocomplete="name"></div>
+<div class="f"><label for="month">When would you like to travel?</label><select id="month" name="month"><option>Not sure yet</option><option>January</option><option>February</option><option>March</option><option>April</option><option>May</option><option>June</option><option>July</option><option>August</option><option>September</option><option>October</option><option>November</option><option>December</option></select></div></div>
+<div class="f"><label for="contact">WhatsApp or phone (optional)</label><input type="text" id="contact" name="contact" autocomplete="tel"></div>
+<p class="seas" id="seas" hidden></p>
+<div class="two"><div class="f"><label for="party">Travel party</label><select id="party" name="party"><option>Couple</option><option>Solo traveller</option><option>Family with children</option><option>Multi-generational family</option><option>Private friends group</option></select></div>
+<div class="f"><label for="arrival">Arrival day</label><select id="arrival" name="arrival"><option>Flexible</option><option>Thursday (puts the Sunday livestock market on Day 4)</option></select></div></div>
+<fieldset><legend>What draws you?</legend><div class="opts"><label><input type="checkbox" name="interest" value="Culture and local communities"> Culture and people</label><label><input type="checkbox" name="interest" value="Silk Road history and archaeology"> History and archaeology</label><label><input type="checkbox" name="interest" value="Mountain landscapes and photography"> Landscapes and photography</label><label><input type="checkbox" name="interest" value="Food and local traditions"> Food and traditions</label></div></fieldset>
+<div class="f"><label for="pace">Preferred pace</label><select id="pace" name="pace"><option>Balanced, with time to absorb each place</option><option>Slower, fewer stops</option><option>Active, comfortable with long drives</option></select></div>
+<div class="f"><label for="notes">Anything else? (optional)</label><textarea id="notes" name="notes" maxlength="800" placeholder="Mobility needs, hotel preferences, photography interests…"></textarea></div>
+<button class="btn gold" type="submit">Prepare my enquiry ↗</button>
+<p class="priv">Opens your email app with a drafted message. This demo stores nothing; nothing is sent unless you send the email.</p>
+<div class="out" id="out" hidden><label for="draft">Email didn’t open? Copy your enquiry:</label><textarea id="draft" readonly></textarea><div class="acts-row"><button class="btn ghost" type="button" id="cp">Copy text</button><a class="btn ghost" id="gm" target="_blank" rel="noopener noreferrer" href="#">Open in Gmail</a></div></div>
+</form>
 </div></section>
 </main>
-<footer class="footer"><div class="foot-inner"><div><strong>Intriq Journal · Editorial concept</strong><br>Story-led travel content prototype for review, not an official booking page.</div><div>Images: supplied Intriq Journey page archive. <a href="https://www.intriqjourney.com/itinerary/10-days-heritage-of-southern-xinjiang/" target="_blank" rel="noopener noreferrer">Original source itinerary</a>.<br>All logistics, prices and experiences require provider verification.</div></div></footer>
+
+<footer class="foot"><div><p><strong>Intriq Journal · Editorial concept</strong><br>A story-led design prototype for review, not an official booking page.</p><p>Images and itinerary: Intriq Journey page archive (<a href="https://www.intriqjourney.com/itinerary/10-days-heritage-of-southern-xinjiang/" target="_blank" rel="noopener noreferrer">original itinerary</a>).<br>All prices, logistics and experiences are confirmed by Intriq on enquiry. <a href="index.html">Journal home</a></p></div></footer>
+
+<div class="sticky" id="sticky"><span>From<b>SGD 7,580</b></span><a class="btn gold" data-cta="sticky" href="#enquire">Check availability</a></div>
+
 <script>
 (function(){
- const form=document.getElementById('journey-form');
- if(!form)return;
- form.addEventListener('submit',function(event){
-  event.preventDefault();
-  const interests=[...form.querySelectorAll('input[name="interest"]:checked')].map(i=>i.value);
-  const pace=document.getElementById('pace').value;
-  const travellers=document.getElementById('travellers').value;
-  const notes=document.getElementById('notes').value.trim();
-  const body=['Hello Intriq,','',"I'd like to explore a private Southern Xinjiang journey based on the 10-day Heritage itinerary.",'','Interests: '+(interests.join('; ')||'Open to recommendations'),'Preferred pace: '+pace,'Travellers: '+travellers,'Additional priorities: '+(notes||'None provided'),'','Please confirm dates, availability, inclusions, the current indicative price, the Duku Highway highlight and the arrangements for local encounters.','', 'Source: Condetest Southern Xinjiang editorial concept'].join('\n');
-  window.dataLayer=window.dataLayer||[];
-  window.dataLayer.push({event:'qualified_journey_enquiry',journey:'southern_xinjiang',selected_interest_count:interests.length,interest_categories:interests,pace:pace,traveller_type:travellers});
-  window.location.href='mailto:enquiry@intriqjourney.com?subject='+encodeURIComponent('Private Southern Xinjiang journey enquiry')+'&body='+encodeURIComponent(body);
- });
+var d=window.dataLayer=window.dataLayer||[],f=document.getElementById('f'),cp=document.getElementById('cp'),
+    s=document.getElementById('sticky'),h=document.querySelector('.hero'),q=document.getElementById('enquire'),st={h:true,q:false};
+document.addEventListener('click',function(e){var a=e.target.closest('[data-cta]');if(a)d.push({event:'cta_click',cta:a.dataset.cta})});
+[].forEach.call(document.querySelectorAll('[data-interest]'),function(a){a.addEventListener('click',function(){var c=f.querySelector('input[value="'+a.dataset.interest+'"]');if(c)c.checked=true})});
+var ex=document.getElementById('ex');ex.addEventListener('click',function(){var on=ex.getAttribute('aria-pressed')!=='true';[].forEach.call(document.querySelectorAll('.day'),function(x){x.open=on});ex.setAttribute('aria-pressed',on);ex.textContent=on?'Collapse all days':'Expand all days'});
+if('IntersectionObserver' in window){var io=new IntersectionObserver(function(l){l.forEach(function(x){st[x.target===h?'h':'q']=x.isIntersecting});s.classList.toggle('on',!st.h&&!st.q)});io.observe(h);io.observe(q)}
+f.addEventListener('submit',function(e){e.preventDefault();
+ var v=function(n){return f.elements[n].value},it=[].map.call(f.querySelectorAll('input[name=interest]:checked'),function(i){return i.value}),
+ to='enquiry@intriqjourney.com',sub='Southern Xinjiang journey enquiry',
+ body=['Hello Intriq,','','I’d like to enquire about the 10-day Heritage of Southern Xinjiang journey.','','Name: '+(v('name')||'-'),'Contact: '+(v('contact')||'-'),'Travel window: '+v('month'),'Arrival day: '+v('arrival'),'Travellers: '+v('party'),'Pace: '+v('pace'),'Interests: '+(it.join('; ')||'Open to suggestions'),'Notes: '+(v('notes').trim()||'None'),'','Please confirm availability, the current price and any tailoring options.','','Sent from the Southern Xinjiang page'].join('\n');
+ d.push({event:'qualified_journey_enquiry',journey:'southern_xinjiang',interest_categories:it,month:v('month'),traveller_type:v('party'),pace:v('pace')});
+ document.getElementById('draft').value='To: '+to+'\nSubject: '+sub+'\n\n'+body;
+ document.getElementById('gm').href='https://mail.google.com/mail/?view=cm&to='+to+'&su='+encodeURIComponent(sub)+'&body='+encodeURIComponent(body);
+ var o=document.getElementById('out');o.hidden=false;
+ location.href='mailto:'+to+'?subject='+encodeURIComponent(sub)+'&body='+encodeURIComponent(body);
+ o.scrollIntoView({block:'nearest'})});
+cp.addEventListener('click',function(){var t=document.getElementById('draft');t.select();
+ (navigator.clipboard?navigator.clipboard.writeText(t.value):Promise.reject()).then(function(){cp.textContent='Copied'},function(){document.execCommand('copy');cp.textContent='Copied'})});
+var pg=location.href.split('#')[0],wa=document.getElementById('wa'),cl=document.getElementById('cl'),sea=document.getElementById('seas'),sd={};
+wa.href='https://wa.me/?text='+encodeURIComponent('10 days from the Pamirs to the painted caves of Kizil, from SGD 7,580: '+pg);
+cl.addEventListener('click',function(){(navigator.clipboard?navigator.clipboard.writeText(pg):Promise.reject()).then(function(){cl.textContent='Link copied'},function(){cl.textContent='Copy failed'});d.push({event:'share',method:'copy'})});
+document.getElementById('pr').addEventListener('click',function(){d.push({event:'share',method:'print'});window.print()});
+window.addEventListener('beforeprint',function(){[].forEach.call(document.querySelectorAll('.day,.q'),function(x){x.open=true})});
+f.elements.month.addEventListener('change',function(){var m=this.value,on=m==='March'||m==='April';sea.hidden=!on;if(on)sea.textContent='Apricot blossom is possible in the mountains between 23 March and 20 April, though it is never guaranteed.';d.push({event:'month_selected',month:m})});
+f.addEventListener('focusin',function(){if(!f.dataset.s){f.dataset.s=1;d.push({event:'form_start'})}});
+window.addEventListener('scroll',function(){var p=(scrollY+innerHeight)/document.documentElement.scrollHeight*100;[25,50,75,100].forEach(function(m){if(p>=m-1&&!sd[m]){sd[m]=1;d.push({event:'scroll_depth',percent:m})}})},{passive:true});
 })();
 </script>
 </body>
