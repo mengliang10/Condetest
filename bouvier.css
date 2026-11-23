@@ -154,3 +154,73 @@
   html[data-locale]:not([data-locale="en"]) .bp2-quote p{font:400 12pt/1.4 var(--serif)}
   html[data-locale]:not([data-locale="en"]) .bp2-photo{height:51mm}
 }
+
+
+/* Editorial art direction revision: restore the image-rich magazine concept. */
+@media screen{
+ .bouvier-page .bouvier-lede{padding-top:0!important}
+ .bouvier-page .bouvier-hero{margin:0}
+ .bouvier-page .bouvier-hero img{height:clamp(350px,46vw,640px);filter:saturate(.84) contrast(1.06)}
+ .bouvier-page .bouvier-hero figcaption{padding:12px clamp(26px,6.5vw,104px);font-size:11px}
+ .bouvier-page .bouvier-titleblock{max-width:1320px;padding:62px clamp(27px,7vw,105px) 54px;text-align:left}
+ .bouvier-page .bouvier-titleblock h1{font:500 clamp(53px,6.2vw,93px)/1.08 var(--serif);max-width:1090px;margin:15px 0 23px;letter-spacing:-.048em}
+ .bouvier-page .bouvier-standfirst{max-width:970px;margin:0;color:#53453e;font-size:clamp(19px,2.2vw,31px)}
+ .bouvier-page .bouvier-byline{margin:23px 0 0;font-size:10px}
+ .bouvier-page .bouvier-lede-actions{margin-top:23px}
+ .bouvier-page .bouvier-route{background:#ede2cd;border-top:1px solid #cbb99b;border-bottom:1px solid #cbb99b;padding:20px 22px 13px;margin-bottom:92px}
+ .bouvier-page .bouvier-route .bouvier-mapcopy{display:flex;justify-content:space-between;align-items:center;padding:2px 5px 12px}
+ .bouvier-page .bouvier-route .bouvier-mapcopy h2{font-size:19px}
+ .bouvier-page .bouvier-map-image{display:block;width:100%;height:auto;object-fit:contain;border:1px solid rgba(113,79,50,.21);box-shadow:0 8px 20px #55371915}
+ .bouvier-page .bouvier-route figcaption{text-align:right;padding-top:10px}
+ .bouvier-page .bouvier-prologue{padding-top:55px;padding-bottom:65px}
+ .bouvier-page .bouvier-chapter-copy h2{color:#81342e}
+ .bouvier-page .bouvier-diptych{margin:0 0 88px;gap:25px}
+ .bouvier-page .bouvier-diptych figure{margin:0;background:#f2e9dc}
+ .bouvier-page .bouvier-diptych img{height:380px;filter:saturate(.84)}
+ .bouvier-page .bouvier-diptych figcaption{min-height:44px;padding:15px 13px 12px;font:700 10px var(--sans);letter-spacing:.1em;color:#7b5143}
+ .bouvier-page .bouvier-chapter-image{filter:saturate(.9);object-position:center}
+ .bouvier-page .bouvier-bigquote{padding:50px 26px}
+ .bouvier-page .bouvier-notegrid>div{background:#f5eee5}
+ .bouvier-page .bouvier-notegrid img{height:240px;filter:saturate(.84)}
+ .bouvier-page .bouvier-notegrid h3{font-size:25px}
+}
+@media screen and (max-width:850px){
+ .bouvier-page .bouvier-titleblock{padding:36px 26px 41px}
+ .bouvier-page .bouvier-titleblock h1{font-size:clamp(42px,6vw,67px)}
+ .bouvier-page .bouvier-route{margin-bottom:62px}
+ .bouvier-page .bouvier-diptych img{height:235px}
+}
+@media screen and (max-width:550px){
+ .bouvier-page .bouvier-hero img{height:260px}
+ .bouvier-page .bouvier-titleblock{padding:32px 20px 37px}
+ .bouvier-page .bouvier-titleblock h1{font-size:42px;line-height:1.12}
+ .bouvier-page .bouvier-standfirst{font-size:19px}
+ .bouvier-page .bouvier-route{padding:13px 9px;margin-bottom:60px}
+ .bouvier-page .bouvier-route .bouvier-mapcopy{display:block}
+ .bouvier-page .bouvier-route .bouvier-mapcopy h2{font-size:15px;margin-top:8px}
+ .bouvier-page .bouvier-map-image{min-width:0;width:100%;height:auto}
+ .bouvier-page .bouvier-diptych{grid-template-columns:1fr;gap:18px;margin-bottom:60px}
+ .bouvier-page .bouvier-diptych img{height:245px}
+}
+/* The printed edition uses a map-led second page with balanced columns.
+   All elements remain inside the two fixed A4 sheets. */
+@media print{
+ .bouvier-sheet-two .bp2-mapbox{position:absolute;top:32mm;left:15mm;right:15mm;height:63mm;overflow:hidden}
+ .bouvier-sheet-two .bp2-mapbox img{display:block;width:180mm;height:57mm;object-fit:cover;border:1px solid #c0ad90}
+ .bouvier-sheet-two .bp2-mapbox .bp2-mapnote{height:5mm;padding-top:1mm;text-align:right;font:500 6.1pt 'DM Sans',sans-serif;color:#796451}
+ .bouvier-sheet-two .bp2-cols{top:101mm;bottom:77mm;gap:10mm}
+ .bouvier-sheet-two .bp2-cols h2{font-size:17.8pt;line-height:1.18;margin:0 0 3.4mm}
+ .bouvier-sheet-two .bp2-cols p{font:400 8.1pt/1.41 Georgia,serif;margin:0 0 3.4mm}
+ .bouvier-sheet-two .bp2-cols .bp-kicker{font-size:6.7pt;margin-bottom:2.9mm}
+ .bouvier-sheet-two .bp2-cols .bp-kicker:not(:first-child){margin-top:5mm}
+ .bouvier-sheet-two .bp2-photo{height:33mm;margin-bottom:5mm}
+ .bouvier-sheet-two .bp2-quote{top:226mm;padding:3.5mm 0}
+ .bouvier-sheet-two .bp2-quote p{font-size:13.2pt}
+ .bouvier-sheet-two .bp2-steps{top:251mm}
+ .bouvier-sheet-two .bp2-steps h3{font-size:7.4pt}
+ .bouvier-sheet-two .bp2-steps p{font-size:7.7pt;line-height:1.35}
+ html[data-locale]:not([data-locale="en"]) .bouvier-sheet-two .bp2-cols p{font-family:var(--sans);font-size:7.35pt;line-height:1.42}
+ html[data-locale]:not([data-locale="en"]) .bouvier-sheet-two .bp2-cols h2{font-family:var(--serif);font-size:14pt;line-height:1.2}
+ html[data-locale]:not([data-locale="en"]) .bouvier-sheet-two .bp2-photo{height:28mm}
+ html[data-locale]:not([data-locale="en"]) .bouvier-sheet-two .bp2-steps p{font-family:var(--sans);font-size:7.2pt}
+}
