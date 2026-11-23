@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 520" role="img" aria-labelledby="title description">
+<title id="title">The Way of the World: Geneva to the Khyber Pass, 1953–1954</title>
+<desc id="description">Illustrated eastward route through Yugoslavia, Turkey and Iran towards the Khyber Pass. A schematic map inspired by historical travel atlases; not a precise road itinerary.</desc>
+<defs>
+ <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#f6ead4"/><stop offset=".55" stop-color="#e9d8bb"/><stop offset="1" stop-color="#e0cda8"/></linearGradient>
+ <linearGradient id="water" x2="0" y2="1"><stop stop-color="#8ba7aa"/><stop offset="1" stop-color="#bfd0c7"/></linearGradient>
+ <radialGradient id="vignette"><stop offset=".63" stop-color="#fff" stop-opacity="0"/><stop offset="1" stop-color="#785e3d" stop-opacity=".13"/></radialGradient>
+ <filter id="paperNoise" x="0" y="0" width="100%" height="100%"><feTurbulence type="fractalNoise" baseFrequency=".035" numOctaves="3" seed="7" stitchTiles="stitch" result="noise"/><feColorMatrix in="noise" type="saturate" values="0" result="grey"/><feComponentTransfer in="grey"><feFuncA type="linear" slope=".13"/></feComponentTransfer></filter>
+ <pattern id="grid" width="78" height="50" patternUnits="userSpaceOnUse"><path d="M 78 0 L 0 0 0 50" stroke="#9f967d" stroke-width=".6" opacity=".27" fill="none"/></pattern>
+ <pattern id="hatch" width="11" height="11" patternUnits="userSpaceOnUse"><path d="M 0 11 L 11 0" stroke="#84745c" stroke-width=".6" opacity=".18"/></pattern>
+ <filter id="soften"><feGaussianBlur stdDeviation="2.7"/></filter>
+</defs>
+<rect width="1200" height="520" fill="url(#paper)"/>
+<rect width="1200" height="520" fill="url(#grid)"/>
+<!-- Antique cartographic sea silhouettes; intentionally schematic. -->
+<path d="M0 315C96 297 148 284 215 323C266 358 332 363 388 338S480 318 538 354C583 384 639 376 676 399L728 520H0Z" fill="url(#water)" opacity=".82"/>
+<path d="M398 255C445 229 505 226 566 237C602 251 639 269 651 288C602 309 543 313 497 297C444 284 416 273 398 255Z" fill="#9bb4b5" opacity=".86"/>
+<path d="M740 204C766 171 804 163 833 186C863 219 861 273 843 312C830 342 813 360 792 353C773 320 762 286 758 250Z" fill="#9bb4b5" opacity=".9"/>
+<path d="M747 461Q770 429 794 428L825 460L848 520H745Z" fill="#a1bbba" opacity=".8"/>
+<!-- Southern mountains; translucent watercolour shadow and crags. -->
+<path d="M602 376L668 345L705 372L745 352L791 387L844 363L902 395L966 350L1023 390L1095 342L1180 365L1200 460L600 470Z" fill="#b3a88b" opacity=".31" filter="url(#soften)"/>
+<path d="M600 408L639 373L665 394L701 360L721 397L746 367L789 413L840 374L874 402L916 354L954 397L994 363L1019 403L1072 366L1118 402L1169 368L1200 402" fill="none" stroke="#9c8c6e" stroke-width="3" opacity=".28"/>
+<path d="M620 415L650 390L668 407L709 376L731 405L762 387L791 415L842 394L869 419L925 378L956 410L998 390L1030 414L1074 381L1128 424" fill="none" stroke="#9a896f" stroke-width="1.3" opacity=".55"/>
+<rect x="11" y="11" width="1178" height="498" fill="none" stroke="#ab9073" stroke-width="1.2"/>
+<rect width="1200" height="520" fill="url(#vignette)"/>
+<rect width="1200" height="520" filter="url(#paperNoise)"/>
+<g fill="#6c5d4c" font-family="Georgia,serif" font-size="20" font-style="italic" letter-spacing="2" opacity=".68">
+<text x="216" y="106">EUROPE</text><text x="732" y="95">ASIA</text><text x="225" y="429">Mediterranean Sea</text><text x="493" y="274">Black Sea</text><text x="766" y="279" transform="rotate(90 766 279)">Caspian Sea</text><text x="1050" y="451">Hindu Kush</text></g>
+<!-- Route constructed as a labelled schematic connecting major historical stages. -->
+<path d="M196 164C225 164 252 166 279 169S329 180 363 185C402 192 440 222 469 232C529 252 589 264 678 268C708 271 723 290 740 298C791 323 853 309 901 310C935 312 956 321 990 322" fill="none" stroke="#fbf2e3" stroke-width="9" stroke-linecap="round" opacity=".88"/>
+<path d="M196 164C225 164 252 166 279 169S329 180 363 185C402 192 440 222 469 232C529 252 589 264 678 268C708 271 723 290 740 298C791 323 853 309 901 310C935 312 956 321 990 322" fill="none" stroke="#933f38" stroke-width="4.4" stroke-linecap="round" stroke-dasharray="2 12"/>
+<g fill="#913b35" stroke="#fff8ea" stroke-width="4">
+<circle cx="196" cy="164" r="8"/><circle cx="363" cy="185" r="6.5"/><circle cx="469" cy="232" r="8"/><circle cx="678" cy="268" r="7"/><circle cx="740" cy="298" r="7"/><circle cx="990" cy="322" r="8.5"/>
+</g>
+<g font-family="Georgia,serif" fill="#4e3a2f" font-size="22">
+<text x="164" y="139">Geneva</text><text x="328" y="161">Balkans</text><text x="441" y="210">Istanbul</text><text x="633" y="240">Tabriz</text><text x="720" y="335">Tehran</text><text x="949" y="354">Khyber Pass</text></g>
+<path d="M74 78V134M61 107H87M68 83L80 130M80 83L68 130" stroke="#725844" stroke-width="2"/>
+<path d="M74 72l-6 10h12z" fill="#725844"/><text x="67" y="63" font-family="Georgia,serif" font-size="17" fill="#725844">N</text>
+<g font-family="Georgia,serif" fill="#544134"><text x="37" y="32" font-size="23" letter-spacing="3">THE JOURNEY EAST</text><text x="36" y="57" font-size="14" letter-spacing="2">GENEVA TO THE KHYBER PASS · 1953–1954</text></g>
+<rect x="25" y="456" width="450" height="45" rx="1" fill="#faf0dc" opacity=".78"/>
+<text x="40" y="476" font-family="Georgia,serif" font-size="15" fill="#62513d">Historical route illustration, not a navigational map</text>
+<text x="40" y="493" font-family="Georgia,serif" font-size="13" font-style="italic" fill="#7c6a53">Major stages shown; minor stops omitted</text>
+</svg>
