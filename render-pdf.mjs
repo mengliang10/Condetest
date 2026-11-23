@@ -4,12 +4,14 @@ import { resolve } from 'node:path';
 import { statSync } from 'node:fs';
 
 const locales = ['en', 'zh-CN', 'zh-TW', 'ko', 'ja'];
+const editions = [{source:'story.html',prefix:'magazine'}, {source:'bouvier.html',prefix:'bouvier'}];
 const browser = await chromium.launch({ headless: true, args: ['--no-sandbox'] });
 try {
+  for (const edition of editions) {
   for (const locale of locales) {
     const page = await browser.newPage({ viewport: { width: 1280, height: 900 }, deviceScaleFactor: 1 });
     try {
-      const url = pathToFileURL(resolve('story.html')).href + '?lang=' + encodeURIComponent(locale);
+      const url = pathToFileURL(resolve(edition.source)).href + '?lang=' + encodeURIComponent(locale);
       await page.goto(url, { waitUntil: 'load', timeout: 45000 });
       await page.waitForFunction(() => window.__localeReady === true, null, { timeout: 60000 });
       const actual = await page.locator('html').getAttribute('lang');
@@ -45,7 +47,7 @@ try {
       });
 
       await page.emulateMedia({ media: 'print' });
-      const filename = locale === 'en' ? 'magazine.pdf' : 'magazine.' + locale + '.pdf';
+      const filename = locale === 'en' ? edition.prefix + '.pdf' : edition.prefix + '.' + locale + '.pdf';
       const renderedPdf = await page.pdf({
         path: filename,
         format: 'A4',
@@ -62,6 +64,7 @@ try {
     } finally {
       await page.close();
     }
+  }
   }
 } finally {
   await browser.close();
