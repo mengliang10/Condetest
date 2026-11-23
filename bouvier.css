@@ -1,0 +1,156 @@
+/* Intriq Journal / The literary essay / Responsive screen and two-page A4 print. */
+.bouvier-page{background:#f2eadf}
+.bouvier-page .bouvier-screen{max-width:1500px;margin:0 auto;background:var(--paper)}
+.bouvier-page .nav{gap:30px}
+.bouvier-page .nav .language-selector{margin-left:auto}
+.bouvier-page .header-actions{gap:14px}
+.bouvier-issuebar{padding:15px clamp(24px,5vw,78px);display:flex;justify-content:space-between;background:#e9dfcf;color:#6f6156;font:700 10px var(--sans);text-transform:uppercase;letter-spacing:.2em}
+.bouvier-lede{padding-top:60px}
+.bouvier-titleblock{max-width:1080px;margin:auto;text-align:center;padding:0 40px 43px}
+.bouvier-titleblock h1{font:500 clamp(57px,7.8vw,112px)/1.04 var(--serif);letter-spacing:-.055em;margin:20px auto 28px;max-width:1040px;text-wrap:balance}
+.bouvier-standfirst{font:italic 400 clamp(20px,2.1vw,30px)/1.44 var(--serif);margin:0 auto;max-width:850px;color:#64584f}
+.bouvier-byline{font:700 11px/1.6 var(--sans);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:26px auto 0}
+.bouvier-lede-actions{margin-top:26px}
+.bouvier-hero{margin:0;position:relative}
+.bouvier-hero img{width:100%;height:clamp(340px,52vw,710px);object-fit:cover;object-position:center}
+.bouvier-hero figcaption{font:500 11px/1.5 var(--sans);color:var(--muted);padding:12px clamp(24px,5vw,80px);background:var(--paper)}
+.bouvier-article{padding:0 clamp(25px,7vw,110px) 100px}
+.bouvier-prologue{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(250px,.8fr);gap:clamp(36px,6vw,90px);padding:84px 0 74px}
+.bouvier-prose{font:400 clamp(17px,1.6vw,21px)/1.85 var(--serif)}
+.bouvier-prose p{margin:0 0 22px}
+.bouvier-prose .bouvier-drop{font:400 clamp(23px,2.35vw,34px)/1.54 var(--serif)}
+.bouvier-prose .bouvier-drop:first-letter{float:left;font:500 94px/.78 var(--serif);padding:15px 14px 0 0;color:var(--red)}
+.bouvier-facts{border-top:2px solid var(--red);padding:18px 0 0}
+.bouvier-facts h2{font:500 27px var(--serif);margin:0 0 18px}
+.bouvier-facts dl{margin:0;display:grid;grid-template-columns:1fr;gap:4px}
+.bouvier-facts dt{font:700 10px var(--sans);letter-spacing:.17em;text-transform:uppercase;color:var(--red);margin-top:13px}
+.bouvier-facts dd{font:400 16px/1.5 var(--serif);margin:0}
+.bouvier-route{margin:0 0 94px;background:#e9dfcf;padding:28px 30px 16px;overflow:hidden}
+.bouvier-mapcopy{display:flex;justify-content:space-between;align-items:baseline;gap:20px}
+.bouvier-mapcopy h2{font:400 clamp(17px,2vw,28px)/1.35 var(--serif);margin:0;color:var(--ink)}
+.bouvier-route svg{width:100%;height:auto;display:block;margin:25px 0 0}
+.bouvier-route figcaption{font:500 10px/1.45 var(--sans);color:var(--muted);padding:8px 0}
+.bouvier-chapter{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(0,.98fr);gap:clamp(30px,4vw,64px);align-items:center;margin-bottom:94px}
+.bouvier-chapter.reversed{grid-template-columns:minmax(0,.98fr) minmax(0,1.02fr)}
+.bouvier-chapter-image{width:100%;height:clamp(380px,40vw,560px);object-fit:cover}
+.bouvier-chapter-copy{max-width:550px;padding-block:10px}
+.bouvier-chapter-copy h2{font:500 clamp(37px,4vw,62px)/1.15 var(--serif);letter-spacing:-.038em;margin:22px 0 29px}
+.bouvier-chapter-copy>p:not(.bouvier-caption){font:400 clamp(16px,1.43vw,19px)/1.83 var(--serif);margin:0 0 20px}
+.bouvier-caption{font:600 11px/1.6 var(--sans);color:var(--muted);border-top:1px solid var(--line);padding-top:12px;margin-top:23px!important}
+.bouvier-visualpair{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:-16px 0 96px}
+.bouvier-visualpair figure{margin:0}
+.bouvier-visualpair img{width:100%;height:330px;object-fit:cover}
+.bouvier-bigquote{text-align:center;margin:30px auto 105px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);padding:40px 30px;max-width:970px}
+.bouvier-bigquote p{font:italic 400 clamp(28px,3.3vw,46px)/1.35 var(--serif);color:var(--red);margin:0}
+.bouvier-bigquote small{display:block;margin-top:17px;font:700 9px var(--sans);letter-spacing:.15em;text-transform:uppercase;color:var(--muted)}
+.bouvier-fieldnotes{border-top:2px solid var(--red);padding:24px 0 50px;margin-top:45px}
+.bouvier-fieldnotes h2{font:500 clamp(33px,3.3vw,49px)/1.13 var(--serif);margin:0 0 14px}
+.bouvier-galleryintro{font:italic 400 16px/1.6 var(--serif);max-width:680px;margin:0 0 30px;color:var(--muted)}
+.bouvier-notegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.bouvier-notegrid>div{background:#f5efe6;border:1px solid var(--line);padding-bottom:22px}
+.bouvier-notegrid img{width:100%;height:210px;object-fit:cover}
+.bouvier-notegrid h3{font:500 24px/1.23 var(--serif);margin:19px 18px 8px;color:var(--red)}
+.bouvier-notegrid p{font:400 15px/1.68 var(--serif);margin:0 18px}
+.bouvier-closing{padding:48px 20px 54px;text-align:center}
+.bouvier-closing p{font:italic 400 clamp(26px,3vw,43px)/1.45 var(--serif);max-width:920px;margin:0 auto}
+.bouvier-sources{border-top:1px solid var(--line);padding-top:23px;font:400 12px/1.7 var(--sans);color:var(--muted)}
+.bouvier-sources h2{font:700 11px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--ink)}
+.bouvier-sources a{text-decoration:underline;text-underline-offset:3px}
+.bouvier-bottomnav{display:flex;justify-content:space-between;gap:20px;border-top:1px solid var(--ink);padding-top:30px;margin-top:38px;font:700 11px var(--sans);letter-spacing:.08em}
+.bouvier-bottomnav a:hover{color:var(--red)}
+.bouvier-print{display:none}
+@media(max-width:1100px){.bouvier-page .nav{gap:20px}.bouvier-article{padding-left:5vw;padding-right:5vw}.bouvier-prologue{gap:40px}.bouvier-chapter-copy h2{font-size:42px}}
+@media(max-width:850px){
+  .bouvier-page .site-header{grid-template-columns:1fr;min-height:76px;height:auto;gap:10px;padding:14px 18px}.bouvier-page .edition{display:none}
+  .bouvier-page .brand{justify-self:center}.bouvier-page .header-actions{justify-content:center;flex-wrap:wrap;gap:10px}
+  .bouvier-page .header-actions>a:not(.download-pdf){display:none}
+  .bouvier-page .nav{gap:6px 23px;justify-content:center;flex-wrap:wrap;padding:0 16px}
+  .bouvier-page .nav .language-selector{margin-left:0;order:9}
+  .bouvier-lede{padding-top:44px}.bouvier-titleblock{padding:0 26px 34px}
+  .bouvier-titleblock h1{font-size:clamp(46px,9vw,72px)}
+  .bouvier-prologue{grid-template-columns:1fr;padding:54px 0 50px}
+  .bouvier-facts{display:block}
+  .bouvier-facts dl{grid-template-columns:1fr 1fr;gap:4px 18px}
+  .bouvier-route{margin-bottom:52px}
+  .bouvier-chapter,.bouvier-chapter.reversed{grid-template-columns:1fr;gap:30px;margin-bottom:72px}
+  .bouvier-chapter.reversed .bouvier-chapter-image{order:-1}
+  .bouvier-chapter-image{height:440px}
+  .bouvier-chapter-copy{max-width:none}
+  .bouvier-visualpair{margin:0 0 65px}
+  .bouvier-visualpair img{height:220px}
+  .bouvier-notegrid{gap:13px}
+  .bouvier-notegrid img{height:145px}
+  .bouvier-notegrid h3{font-size:20px}
+  .bouvier-notegrid p{font-size:13px}
+}
+@media(max-width:550px){
+  .bouvier-issuebar{font-size:9px;padding:12px 18px}
+  .bouvier-page .nav{gap:2px 16px;font-size:10px}
+  .bouvier-page .nav a{font-size:10px;padding:15px 0}
+  .bouvier-titleblock h1{font-size:45px;line-height:1.09}
+  .bouvier-standfirst{font-size:20px}
+  .bouvier-byline{font-size:9px}
+  .bouvier-hero img{height:320px}
+  .bouvier-article{padding:0 22px 65px}
+  .bouvier-prose .bouvier-drop{font-size:25px}
+  .bouvier-prose .bouvier-drop:first-letter{font-size:67px}
+  .bouvier-route{padding:20px 15px 13px}
+  .bouvier-mapcopy{display:block}
+  .bouvier-mapcopy h2{margin-top:12px;font-size:17px}
+  .bouvier-route svg{min-width:470px;width:100%;margin-left:-15px}
+  .bouvier-chapter-image{height:285px}
+  .bouvier-chapter-copy h2{font-size:37px}
+  .bouvier-visualpair{gap:10px}
+  .bouvier-visualpair img{height:145px}
+  .bouvier-bigquote{padding:28px 12px;margin-bottom:64px}
+  .bouvier-notegrid{grid-template-columns:1fr;gap:20px}
+  .bouvier-notegrid img{height:220px}
+  .bouvier-notegrid h3{font-size:25px}
+  .bouvier-notegrid p{font-size:15px}
+  .bouvier-bottomnav{flex-direction:column;gap:19px}
+}
+/* Print spread: fixed two-page A4 edition with explicitly bounded regions. */
+@page{size:A4;margin:0}
+@media print{
+  html,body{background:#fffdf9!important;margin:0!important;padding:0!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+  .bouvier-page .site-header,.bouvier-page .nav,.bouvier-page .bouvier-screen,.bouvier-page .site-footer,.bouvier-page .print-progress{display:none!important}
+  .bouvier-print{display:block!important}
+  .bouvier-sheet{position:relative;display:block;width:210mm;height:297mm;background:#fffdf9!important;overflow:hidden;break-after:page;page-break-after:always;color:#182027}
+  .bouvier-sheet:last-child{break-after:auto;page-break-after:auto}
+  .bouvier-sheet *{box-sizing:border-box}
+  .bouvier-printhead{position:absolute;top:10mm;left:14mm;right:14mm;height:13mm;border-bottom:1px solid #a69b8a;display:flex;align-items:center;justify-content:space-between;font:700 7pt 'DM Sans',sans-serif;letter-spacing:.14em;text-transform:uppercase}
+  .bouvier-printhead strong{font:500 25pt Georgia,serif;letter-spacing:.12em;text-transform:none}
+  .bouvier-printfot{position:absolute;bottom:9mm;left:14mm;right:14mm;border-top:1px solid #9f9485;padding-top:3mm;display:flex;justify-content:space-between;font:700 7pt 'DM Sans',sans-serif;text-transform:uppercase;letter-spacing:.1em}
+  .bp1-top{position:absolute;top:34mm;left:15mm;right:15mm}
+  .bp-kicker{font:700 7pt 'DM Sans',sans-serif;text-transform:uppercase;letter-spacing:.16em;color:#9b4038;margin-bottom:5mm}
+  .bp1-top h1{font:500 39pt/1.02 Georgia,serif;letter-spacing:-.045em;margin:0 0 4mm;width:170mm}
+  .bp1-top .bp-deck{font:italic 12pt/1.32 Georgia,serif;max-width:165mm;margin:0}
+  .bp1-photo{position:absolute;top:109mm;left:15mm;width:180mm;height:89mm;object-fit:cover}
+  .bp1-caption{position:absolute;top:200mm;left:15mm;right:15mm;font:600 6.8pt 'DM Sans',sans-serif;color:#6d6055}
+  .bp1-copy{position:absolute;top:214mm;left:15mm;right:15mm;display:grid;grid-template-columns:111mm 58mm;gap:11mm}
+  .bp1-copy p{font:400 9.8pt/1.45 Georgia,serif;margin:0 0 4mm}
+  .bp1-copy p.bp-lead{font:italic 12pt/1.35 Georgia,serif;color:#8e3b39;margin-bottom:4mm}
+  .bp1-copy aside{border-left:1px solid #a77e46;padding-left:5mm}
+  .bp1-copy aside h2{font:700 7pt 'DM Sans',sans-serif;letter-spacing:.15em;text-transform:uppercase;color:#9b4038;margin:0 0 5mm}
+  .bp1-copy aside p{font:400 9pt/1.42 Georgia,serif;margin:0 0 4mm}
+  .bp2-cols{position:absolute;top:33mm;left:15mm;right:15mm;bottom:86mm;display:grid;grid-template-columns:1fr 1fr;gap:10mm}
+  .bp2-cols h2{font:500 23pt/1.14 Georgia,serif;letter-spacing:-.02em;margin:0 0 5mm}
+  .bp2-cols p{font:400 9.4pt/1.45 Georgia,serif;margin:0 0 5mm}
+  .bp2-cols .bp-kicker:not(:first-child){margin-top:7mm}
+  .bp2-photo{width:100%;height:58mm;object-fit:cover;display:block;margin:0 0 7mm}
+  .bp2-quote{position:absolute;left:15mm;right:15mm;top:225mm;border-top:1px solid #a77e46;border-bottom:1px solid #a77e46;text-align:center;padding:5mm 0}
+  .bp2-quote p{font:italic 15pt/1.35 Georgia,serif;color:#9b4038;margin:0}
+  .bp2-steps{position:absolute;top:251mm;left:15mm;right:15mm;display:grid;grid-template-columns:repeat(3,1fr);gap:8mm}
+  .bp2-steps>div+div{border-left:1px solid #d3c4b4;padding-left:5mm}
+  .bp2-steps h3{font:700 8pt 'DM Sans',sans-serif;color:#9b4038;margin:0 0 2mm}
+  .bp2-steps p{font:400 8.5pt/1.35 Georgia,serif;margin:0}
+  html[data-locale]:not([data-locale="en"]) .bp1-top h1{font:500 29pt/1.2 var(--serif);letter-spacing:0}
+  html[data-locale]:not([data-locale="en"]) .bp1-top .bp-deck{font:400 10pt/1.4 var(--sans)}
+  html[data-locale]:not([data-locale="en"]) .bp1-copy p,
+  html[data-locale]:not([data-locale="en"]) .bp2-cols p,
+  html[data-locale]:not([data-locale="en"]) .bp2-steps p{font-family:var(--sans);font-size:8.2pt;line-height:1.5}
+  html[data-locale]:not([data-locale="en"]) .bp1-copy .bp-lead{font:400 10.5pt/1.42 var(--serif)}
+  html[data-locale]:not([data-locale="en"]) .bp2-cols h2{font:500 17pt/1.25 var(--serif);letter-spacing:0}
+  html[data-locale]:not([data-locale="en"]) .bp2-quote p{font:400 12pt/1.4 var(--serif)}
+  html[data-locale]:not([data-locale="en"]) .bp2-photo{height:51mm}
+}
