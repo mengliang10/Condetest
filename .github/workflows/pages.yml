@@ -37,10 +37,10 @@ jobs:
         # including node_modules from the PDF renderer, would be uploaded to Pages.
         run: |
           mkdir -p _site
-          cp *.html styles.css i18n.js print.js ui.js _site/
+          cp *.html styles.css bouvier.css i18n.js bouvier.js print.js ui.js _site/
           if [ -d assets ]; then cp -r assets _site/; fi
           cp -r lang _site/
-          cp magazine*.pdf _site/
+          cp magazine*.pdf bouvier*.pdf _site/
           ls -la _site
       - name: Configure Pages
         uses: actions/configure-pages@v5
