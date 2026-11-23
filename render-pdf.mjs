@@ -46,7 +46,7 @@ try {
 
       await page.emulateMedia({ media: 'print' });
       const filename = locale === 'en' ? 'magazine.pdf' : 'magazine.' + locale + '.pdf';
-      await page.pdf({
+      const renderedPdf = await page.pdf({
         path: filename,
         format: 'A4',
         printBackground: true,
@@ -54,7 +54,11 @@ try {
         margin: { top: '0', right: '0', bottom: '0', left: '0' },
         tagged: true
       });
-      console.log('Created ' + filename + ' (' + statSync(filename).size + ' bytes)');
+      // Chromium emits one /Type /Page dictionary per physical sheet.
+      // Fail the build if a typography change introduces a third page.
+      const pageCount = (renderedPdf.toString('latin1').match(/\\/Type\\s*\\/Page\\b/g) || []).length;
+      if (pageCount !== 2) throw new Error('PDF page count mismatch for ' + locale + ': expected 2, got ' + pageCount);
+      console.log('Created ' + filename + ' (2 A4 pages, ' + statSync(filename).size + ' bytes)');
     } finally {
       await page.close();
     }
