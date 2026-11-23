@@ -94,5 +94,9 @@ window.INTRIQ_ENGLISH_KEYS = [
   "02 / Wander",
   "Keep at least one afternoon free of reservations. Follow a local recommendation, change direction, and treat the unexpected as part of the itinerary.",
   "03 / Arrive",
-  "Where practical, choose a rail journey or overland crossing. The changing landscape connects places into a story and makes arrival feel earned."
+  "Where practical, choose a rail journey or overland crossing. The changing landscape connects places into a story and makes arrival feel earned.",
+  "05 / Literature",
+  "The journey that changes the traveller",
+  "Nicolas Bouvier and the transforming power of the open road.",
+  "Literary journeys"
 ];
